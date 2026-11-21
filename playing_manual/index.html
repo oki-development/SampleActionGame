@@ -1,866 +1,651 @@
+<!DOCTYPE html>
 <html lang="ja">
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>80's Retro Game Respect - Playing manual</title>
-	<link rel="shortcut icon" href="../images/favicon.ico">
-	<link rel="stylesheet" href="../css/default.css" type="text/css">
+	<link rel="icon" href="../images/favicon.ico">
+	<link rel="stylesheet" href="../css/site.css">
 </head>
-<body bgcolor="#000000" text="#FFFFFF" link="#000000" vlink="#000000" alink="#000000">
-	<table>
-	<td height="768" align=center valign="top">
-		<a name="top"><br></a>
-		<br>
-		<br>
-		<span
-			onmouseout="document.id_001.src='../images/button_home_1.png';"
-			onmouseover="document.id_001.src='../images/button_home_2.png';"
-			onmousedown="document.id_001.src='../images/button_home_3.png';"
-			onmouseup="document.id_001.src='../images/button_home_2.png';"
-		>
-			<a href="../index.html" hidefocus=true style="color:black"><img name="id_001" alt="home" src="../images/button_home_1.png"></a><br>
-		</span>
+<body id="top">
+	<div class="layout">
+		<nav class="site-nav" aria-label="メニュー">
+			<ul>
+				<li><a href="../index.html"><img class="normal" src="../images/button_home_1.png" alt="Home"><img class="hover" src="../images/button_home_2.png" alt=""><img class="press" src="../images/button_home_3.png" alt=""></a></li>
+				<li><a href="../information/index.html"><img class="normal" src="../images/button_information_1.png" alt="Information"><img class="hover" src="../images/button_information_2.png" alt=""><img class="press" src="../images/button_information_3.png" alt=""></a></li>
+				<li><span aria-current="page"><img src="../images/button_playing_manual_0.png" alt="Playing manual"></span></li>
+				<li><a href="../download/index.html"><img class="normal" src="../images/button_download_1.png" alt="Download"><img class="hover" src="../images/button_download_2.png" alt=""><img class="press" src="../images/button_download_3.png" alt=""></a></li>
+				<li><a href="../faq/index.html"><img class="normal" src="../images/button_faq_1.png" alt="FAQ"><img class="hover" src="../images/button_faq_2.png" alt=""><img class="press" src="../images/button_faq_3.png" alt=""></a></li>
+				<li><a href="../contact/index.html"><img class="normal" src="../images/button_contact_1.png" alt="Contact"><img class="hover" src="../images/button_contact_2.png" alt=""><img class="press" src="../images/button_contact_3.png" alt=""></a></li>
+				<li><a href="../link/index.html"><img class="normal" src="../images/button_link_1.png" alt="Link"><img class="hover" src="../images/button_link_2.png" alt=""><img class="press" src="../images/button_link_3.png" alt=""></a></li>
+			</ul>
+		</nav>
 
-		<span
-			onmouseout="document.id_002.src='../images/button_information_1.png';"
-			onmouseover="document.id_002.src='../images/button_information_2.png';"
-			onmousedown="document.id_002.src='../images/button_information_3.png';"
-			onmouseup="document.id_002.src='../images/button_information_2.png';"
-		>
-			<a href="../information/index.html" hidefocus=true style="color:black"><img name="id_002" alt="information" src="../images/button_information_1.png"></a><br>
-		</span>
+		<main>
+			<h1 class="page-title"><img src="../images/symbol_playing_manual.png" width="192" height="64" alt="プレーマニュアル Playing Manual"></h1>
+			<p>ここではSample Action Gameのプログラム起動方法、画面表示内容、プレイヤーの操作方法について説明を行います。</p>
+			<div class="figures">
+				<img class="shot" src="../images/shot_title.png" width="256" height="240" alt="title">
+				<img class="shot" src="../images/shot_demo.png" width="256" height="240" alt="demo">
+			</div>
 
-		<img name="id_003" border=0 alt="home" src="../images/button_playing_manual_0.png"><br>
-
-		<span
-			onmouseout="document.id_004.src='../images/button_download_1.png';"
-			onmouseover="document.id_004.src='../images/button_download_2.png';"
-			onmousedown="document.id_004.src='../images/button_download_3.png';"
-			onmouseup="document.id_004.src='../images/button_download_2.png';"
-		>
-			<a href="../download/index.html" hidefocus=true style="color:black"><img name="id_004" alt="download" src="../images/button_download_1.png"></a><br>
-		</span>
-
-		<span
-			onmouseout="document.id_005.src='../images/button_faq_1.png';"
-			onmouseover="document.id_005.src='../images/button_faq_2.png';"
-			onmousedown="document.id_005.src='../images/button_faq_3.png';"
-			onmouseup="document.id_005.src='../images/button_faq_2.png';"
-		>
-			<a href="../faq/index.html" hidefocus=true style="color:black"><img name="id_005" alt="faq" src="../images/button_faq_1.png"></a><br>
-		</span>
-
-		<span
-			onmouseout="document.id_006.src='../images/button_contact_1.png';"
-			onmouseover="document.id_006.src='../images/button_contact_2.png';"
-			onmousedown="document.id_006.src='../images/button_contact_3.png';"
-			onmouseup="document.id_006.src='../images/button_contact_2.png';"
-		>
-			<a href="../contact/index.html" hidefocus=true style="color:black"><img name="id_006" alt="contact" src="../images/button_contact_1.png"></a><br>
-		</span>
-
-		<span
-			onmouseout="document.id_007.src='../images/button_link_1.png';"
-			onmouseover="document.id_007.src='../images/button_link_2.png';"
-			onmousedown="document.id_007.src='../images/button_link_3.png';"
-			onmouseup="document.id_007.src='../images/button_link_2.png';"
-		>
-			<a href="../link/index.html" hidefocus=true style="color:black"><img name="id_007" alt="link" src="../images/button_link_1.png"></a><br>
-		</span>
-
-	</td>
-	<td width=20>
-	</td>
-
-	<td height="768" valign="top">
-	<table>
-<h1><img class="vmid" src="../images/symbol_playing_manual.png" border="0" alt=""></h1>
-<p>
-　ここではSample Action Gameのプログラム起動方法、画面表示内容、プレイヤーの操作方法について説明を行います。<br>
-<br>
-<img src="../images/shot_title.png" border="0" alt="title">　　　
-<img src="../images/shot_demo.png" border="0" alt="demo">
-</p>
-<p class="contents">
-　<a href="#command">１．プログラムの起動方法</a><br>
-　　<a href="#command_option">・起動オプション</a><br>
-　　<a href="#boot">・起動画面(IPL画面)</a><br>
-<br>
-　<a href="#terminate">２．プログラムの終了方法</a><br>
-<br>
-　<a href="#controller">３．操作キー</a><br>
-　　<a href="#controller_main">・プレイヤー操作キー</a><br>
-　　<a href="#controller_sub">・特殊設定キー</a><br>
-<br>
-　<a href="#screen">４．画面の表示内容</a><br>
-　　<a href="#screen_title">・タイトル画面</a><br>
-　　<a href="#screen_stage_start">・ステージ開始画面</a><br>
-　　<a href="#screen_play">・プレー画面</a><br>
-<br>
-　<a href="#playing">５．ゲーム進行について</a><br>
-　　<a href="#playing_stage_clear">・ステージクリア方法</a><br>
-　　<a href="#playing_powerup">・パワーアップと宝箱について</a><br>
-　　<a href="#playing_early_stage">・序盤ステージのプレー進行アドバイス</a><br>
+			<nav class="toc" aria-label="目次">
+				<ol>
+					<li><a href="#command">１．プログラムの起動方法</a>
+						<ul>
+							<li><a href="#command_option">・起動オプション</a></li>
+							<li><a href="#boot">・起動画面(IPL画面)</a></li>
+						</ul>
+					</li>
+					<li><a href="#terminate">２．プログラムの終了方法</a></li>
+					<li><a href="#controller">３．操作キー</a>
+						<ul>
+							<li><a href="#controller_main">・プレイヤー操作キー</a></li>
+							<li><a href="#controller_sub">・特殊設定キー</a></li>
+						</ul>
+					</li>
+					<li><a href="#screen">４．画面の表示内容</a>
+						<ul>
+							<li><a href="#screen_title">・タイトル画面</a></li>
+							<li><a href="#screen_stage_start">・ステージ開始画面</a></li>
+							<li><a href="#screen_play">・プレー画面</a></li>
+						</ul>
+					</li>
+					<li><a href="#playing">５．ゲーム進行について</a>
+						<ul>
+							<li><a href="#playing_stage_clear">・ステージクリア方法</a></li>
+							<li><a href="#playing_powerup">・パワーアップと宝箱について</a></li>
+							<li><a href="#playing_early_stage">・序盤ステージのプレー進行アドバイス</a></li>
+						</ul>
+					</li>
 <!-- 配布用では外す -->
-<br>
-　<a href="#bgm">６．BGM</a><br>
+					<li><a href="#bgm">６．BGM</a></li>
 <!-- /配布用では外す -->
-</p>
-<br>
-<img src="../images/separator_line.png" border="0" alt="">
-<a name="command">
-<br>
-<h2><img class="vmid" src="../images/symbol_player.png" border="0" alt="">
-プログラムの起動方法
-<img class="vmid" src="../images/symbol_player_r.png" border="0" alt=""></h2>
-</a>
-<p>
+				</ol>
+			</nav>
+
+			<h2 class="chapter-title" id="command"><img src="../images/symbol_player.png" width="50" height="27" alt=""> １．プログラムの起動方法 <img src="../images/symbol_player_r.png" width="50" height="27" alt=""></h2>
 <!-- 旧バージョン -->
-<font color="#FF0000"><strong>[旧バージョン説明]</strong></font><br>
-　Sample Action Gameの起動方法はJavaのVM(Virtual Machine)にダウンロードしたActionGame.jarファイルを渡して起動します。
-もしもJavaがインストールされていない場合は、最新版を入手してインストールすることをお奨めします。<br>
-</p>
-<p>
-　どのOSからも、スタンダードな起動方法はコマンドプロンプト(コンソール、ターミナル)を用いて起動します。
-Windowsの場合は「スタートメニュー」→「プログラム」→「アクセサリ」→「コマンド プロンプト」、
-Linux、MacOSの場合はターミナルを起動してコマンドの入力を行います。<br>
-<br>
-<font color="#FF0000">
-　※WindowsのようなJavaのインストール後にファイルの関連付けが行われるOSの場合は、<br>
-　　「ActionGame.jar」のダブルクリックにて即実行が行えます。<br>
-</font>
-<br>
-　コマンドの入力文法は、どのOSもほぼ同様で、<br>
-<br>
-<div class="square">
-<div class="command_line">
-<b>【Windows(コマンドプロンプト)の場合】</b><br>
-　C:\&gt; java -jar [パス名\]ActionGame.jar [オプション] <img class="vmid" src="../images/symbol_enter.png" border="0" alt=""><br>
-<br>
-<br>
-<b>【Linux(ターミナル)の場合】</b><br>
-　$ java -jar [パス名\]ActionGame.jar [オプション]  <img class="vmid" src="../images/symbol_enter.png" border="0" alt=""><br>
-<br>
-<br>
-※<b>[パス名\]</b>はActionGame.jarファイルがあるディレクトリを指定します。<br>
-※<b>[オプション]</b>は以下を参照してください。<br>
-</div>
-</div>
-<br>
-と同様のコマンド文法で起動できます。<br>
-また、起動の際にオプションを指定してゲーム画面や音声の調整を行うことが可能となります。
-<br>
-<br>
+			<p class="ver-title ver-old">[旧バージョン説明]</p>
+			<p>Sample Action Gameの起動方法はJavaのVM(Virtual Machine)にダウンロードしたActionGame.jarファイルを渡して起動します。
+			もしもJavaがインストールされていない場合は、最新版を入手してインストールすることをお奨めします。</p>
+			<p>どのOSからも、スタンダードな起動方法はコマンドプロンプト(コンソール、ターミナル)を用いて起動します。
+			Windowsの場合は「スタートメニュー」→「プログラム」→「アクセサリ」→「コマンド プロンプト」、
+			Linux、MacOSの場合はターミナルを起動してコマンドの入力を行います。</p>
+			<p class="warn">※WindowsのようなJavaのインストール後にファイルの関連付けが行われるOSの場合は、<br>
+			「ActionGame.jar」のダブルクリックにて即実行が行えます。</p>
+			<p>コマンドの入力文法は、どのOSもほぼ同様で、</p>
+			<div class="command">
+				<p><b>【Windows(コマンドプロンプト)の場合】</b><br>
+				　C:\&gt; java -jar [パス名\]ActionGame.jar [オプション] <img src="../images/symbol_enter.png" width="12" height="12" alt="Enter"></p>
+				<p><b>【Linux(ターミナル)の場合】</b><br>
+				　$ java -jar [パス名\]ActionGame.jar [オプション] <img src="../images/symbol_enter.png" width="12" height="12" alt="Enter"></p>
+				<p>※<b>[パス名\]</b>はActionGame.jarファイルがあるディレクトリを指定します。<br>
+				※<b>[オプション]</b>は以下を参照してください。</p>
+			</div>
+			<p class="no-indent">と同様のコマンド文法で起動できます。<br>
+			また、起動の際にオプションを指定してゲーム画面や音声の調整を行うことが可能となります。</p>
 <!-- /旧バージョン -->
-<!-- 新旧の書き分け --><font color="#00FFFF"><strong>[新バージョン説明]</strong></font><br><!-- /新旧の書き分け -->
-　Sample Action Gameの起動方法は各プラットフォーム版でダウンロードしたActionGameファイルで起動します。<br>
-</p>
-<p>
-　どのOSからも、スタンダードな起動方法はターミナル(Windowsの場合はコマンドプロンプト、PowerShellなど)を用いて起動します。
-Windowsの場合は「スタートメニュー」→「プログラム」→「アクセサリ」→「コマンド プロンプト」、
-Linuxの場合はターミナルを起動してコマンドの入力を行います。<br>
-<br>
-<font color="#FF0000">
-　※WindowsやLinuxのファイルマネージャ系のものから直接実行も「action_game.exe (Windows版)」「action_game (Linux版)」のダブルクリックにて即実行が行えます。<br>
-</font>
-<br>
-　コマンドの入力文法は、どのOSもほぼ同様で、<br>
-<br>
-<div class="square">
-<div class="command_line">
-<b>【Windows(コマンドプロンプト)の場合】</b><br>
-　C:\&gt; [パス名\]action_game.exe [オプション] <img class="vmid" src="../images/symbol_enter.png" border="0" alt=""><br>
-<br>
-<br>
-<b>【Linux(ターミナル)の場合】</b><br>
-　$ action_game [オプション]  <img class="vmid" src="../images/symbol_enter.png" border="0" alt=""><br>
-<br>
-<br>
-※<b>[パス名\]</b>はaction_game(.exe)ファイルがあるディレクトリを指定します。<br>
-※<b>[オプション]</b>は以下を参照してください。<br>
-</div>
-</div>
-<br>
-と同様のコマンド文法で起動できます。<br>
-また、起動の際にオプションを指定してゲーム画面や音声の調整を行うことが可能となります。
-<div align="right"><a href="#top">&lt;TOP&gt;</a></div>
-</p>
-<p>
-<a name="command_option"></a>
-<br>
-<font color="#FFFF00"><b>【起動オプション】</b></font><br><br>
-　オプションは以下のものがあります。<br>
-各オプションは複数指定可能です。(画面に関するものは組み合わせられないものもあります)<br>
-複数指定の場合はオプション毎にスペースで区切ってください。オプション名の大文字・小文字は区別しません。<br>
-<br>
-<!-- 新旧の書き分け -->旧バージョン(Java版)と新バージョン(Rust版)で違いがあるものは、説明の中に<font color="#FF0000"><b>[旧バージョン]</b></font>・<font color="#00FFFF"><b>[新バージョン]</b></font>として説明を分けています。<br>
-<br>
+<!-- 新旧の書き分け -->
+			<p class="ver-title ver-new">[新バージョン説明]</p>
 <!-- /新旧の書き分け -->
-<table width="100%" border="1" cellpadding="2" cellspacing="0" align="center" bgcolor="#000000" class="command_line">
-<tr>
-	<th width="25%" align="center">オプション</th>
-	<th width="75%">説明</th>
-</tr>
-<tr>
-	<td align="center">help<br>--help<br>-h<br>/?</td>
-	<td>コマンドラインのヘルプを表示します。</td>
-</tr>
-<tr>
-	<td align="center">version<br>-version<br>--version<br>-v</td>
-	<td>バージョンを表示します。</td>
-</tr>
-<tr>
-	<td align="center">window_xy=x,y</td>
-	<td>ウィンドウの表示位置となります。<br>x,yにそれぞれデスクトップの座標をピクセル単位で指定します。<br>このパラメータを指定しない場合は、デスクトップの中央に表示します。</td>
-</tr>
-<tr>
-	<td align="center">window_mag=magnification</td>
-	<td>ウィンドウの表示倍率となります。<br>magnificationに倍率を指定します。<br>例として3倍の表示をしたい場合は3.0と指定します。<br>指定できる倍率は0.5～5.0で、範囲を外れた場合は0.5または5.0となります。<br>このパラメータを指定しない場合は、2倍(2.0)となります。</td>
-</tr>
-<tr>
-	<td align="center">window_wh=width,height</td>
-	<td>ウィンドウの表示サイズとなります。<br>width,heightにそれぞれスクリーンの横縦サイズをピクセル単位で指定します。<br>window_magと違い、任意にスクリーンの横サイズと縦サイズを指定します。<br>指定できるサイズは横100～1600、縦100～1200で、範囲を外れた場合は等倍(256,240)となります。<br>このパラメータを指定しない場合は、2倍(512,480)となります。<br>※window_magと両方を指定した場合は、後に書いた方が有効となります。</td>
-</tr>
-<tr>
-	<td align="center"><!-- 旧バージョン --><font color="#FF0000"><b>[旧バージョン]</b></font><br>window_fullscreen=<br>width,<br>height,<br>RefreshRate,<br>ColorBitDepth<br><br>※このパラメータは<br>一行で記述します<br><br><!-- /旧バージョン --><!-- 新旧の書き分け --><font color="#00FFFF"><b>[新バージョン]</b></font><br><!-- /新旧の書き分け -->window_fullscreen</td>
-	<td>フルスクリーン表示となります。<br><br><!-- 旧バージョン --><font color="#FF0000"><b>[旧バージョン]</b></font>(※OSにより機能しないことがあります。)<br>width,heightにそれぞれスクリーンの横縦サイズをピクセル単位で指定し、<br>RefreshRate,ColorBitDepthにモニター周波数、カラービット数を指定します。<br>設定する値の意味が理解できない場合は、以下の『diagnose=2』パラメータを実行して、その結果を入力してください。<br><br><!-- /旧バージョン --><!-- 新旧の書き分け --><font color="#00FFFF"><b>[新バージョン]</b></font><br><!-- /新旧の書き分け -->「=」以降の値は付けずに指定します。<br>画面の解像度は変えずに、デスクトップ全体にゲーム画面を拡大して表示します。<br>ゲーム画面の縦横比は保たれ、余った左右または上下は黒く表示されます。</td>
-</tr>
-<tr>
-	<td align="center">framerate=rate</td>
-	<td>ゲームの速さ(1フレームの時間)の設定となります。<br>rateに1フレームの時間をミリ秒単位で1～100の間にて指定します。値が小さいほどゲームが速く動きます。<br>範囲を外れた場合や、このパラメータを指定しない場合は、17(1秒間に約59フレーム)となります。<br>この設定はプレー中にF7キー(値を下げる)、F8キー(値を上げる)にて変更が可能です。</td>
-</tr>
-<tr>
-	<td align="center">sound_enable=mode</td>
-	<td>音を鳴らす設定となります。<br>modeに1を設定するとON(有音)に、0を設定するとOFF(無音)になります。<br>このパラメータを指定しない場合は、1(ON)となります。<!-- 旧バージョン --><br><br><font color="#FF0000"><b>[旧バージョン]</b></font><br>0(OFF)で起動した場合は、プレー中にF5キーを押しても音は鳴りません。<br>1(ON)で起動した場合は、プレー中にF5キーにてON/OFF切り替えが可能です。<!-- /旧バージョン --><br><br><!-- 新旧の書き分け --><font color="#00FFFF"><b>[新バージョン]</b></font><br><!-- /新旧の書き分け -->0(OFF)で起動した場合も、プレー中にF5キーにてON/OFF切り替えが可能です。</td>
-</tr>
+			<p>Sample Action Gameの起動方法は各プラットフォーム版でダウンロードしたActionGameファイルで起動します。</p>
+			<p>どのOSからも、スタンダードな起動方法はターミナル(Windowsの場合はコマンドプロンプト、PowerShellなど)を用いて起動します。
+			Windowsの場合は「スタートメニュー」→「プログラム」→「アクセサリ」→「コマンド プロンプト」、
+			Linuxの場合はターミナルを起動してコマンドの入力を行います。</p>
+			<p class="warn">※WindowsやLinuxのファイルマネージャ系のものから直接実行も「action_game.exe (Windows版)」「action_game (Linux版)」のダブルクリックにて即実行が行えます。</p>
+			<p>コマンドの入力文法は、どのOSもほぼ同様で、</p>
+			<div class="command">
+				<p><b>【Windows(コマンドプロンプト)の場合】</b><br>
+				　C:\&gt; [パス名\]action_game.exe [オプション] <img src="../images/symbol_enter.png" width="12" height="12" alt="Enter"></p>
+				<p><b>【Linux(ターミナル)の場合】</b><br>
+				　$ action_game [オプション] <img src="../images/symbol_enter.png" width="12" height="12" alt="Enter"></p>
+				<p>※<b>[パス名\]</b>はaction_game(.exe)ファイルがあるディレクトリを指定します。<br>
+				※<b>[オプション]</b>は以下を参照してください。</p>
+			</div>
+			<p class="no-indent">と同様のコマンド文法で起動できます。<br>
+			また、起動の際にオプションを指定してゲーム画面や音声の調整を行うことが可能となります。</p>
+			<p class="to-top"><a href="#top">&lt;TOP&gt;</a></p>
+
+			<h3 class="sub-title" id="command_option">【起動オプション】</h3>
+			<p>オプションは以下のものがあります。<br>
+			各オプションは複数指定可能です。(画面に関するものは組み合わせられないものもあります)<br>
+			複数指定の場合はオプション毎にスペースで区切ってください。オプション名の大文字・小文字は区別しません。</p>
+<!-- 新旧の書き分け -->
+			<p class="no-indent">旧バージョン(Java版)と新バージョン(Rust版)で違いがあるものは、説明の中に<b class="ver-old">[旧バージョン]</b>・<b class="ver-new">[新バージョン]</b>として説明を分けています。</p>
+<!-- /新旧の書き分け -->
+			<div class="table-wrap">
+			<table class="data">
+				<tr>
+					<th style="width: 25%">オプション</th>
+					<th>説明</th>
+				</tr>
+				<tr>
+					<td class="c">help<br>--help<br>-h<br>/?</td>
+					<td>コマンドラインのヘルプを表示します。</td>
+				</tr>
+				<tr>
+					<td class="c">version<br>-version<br>--version<br>-v</td>
+					<td>バージョンを表示します。</td>
+				</tr>
+				<tr>
+					<td class="c">window_xy=x,y</td>
+					<td>ウィンドウの表示位置となります。<br>x,yにそれぞれデスクトップの座標をピクセル単位で指定します。<br>このパラメータを指定しない場合は、デスクトップの中央に表示します。</td>
+				</tr>
+				<tr>
+					<td class="c">window_mag=magnification</td>
+					<td>ウィンドウの表示倍率となります。<br>magnificationに倍率を指定します。<br>例として3倍の表示をしたい場合は3.0と指定します。<br>指定できる倍率は0.5～5.0で、範囲を外れた場合は0.5または5.0となります。<br>このパラメータを指定しない場合は、2倍(2.0)となります。</td>
+				</tr>
+				<tr>
+					<td class="c">window_wh=width,height</td>
+					<td>ウィンドウの表示サイズとなります。<br>width,heightにそれぞれスクリーンの横縦サイズをピクセル単位で指定します。<br>window_magと違い、任意にスクリーンの横サイズと縦サイズを指定します。<br>指定できるサイズは横100～1600、縦100～1200で、範囲を外れた場合は等倍(256,240)となります。<br>このパラメータを指定しない場合は、2倍(512,480)となります。<br>※window_magと両方を指定した場合は、後に書いた方が有効となります。</td>
+				</tr>
+				<tr>
+					<td class="c"><!-- 旧バージョン --><b class="ver-old">[旧バージョン]</b><br>window_fullscreen=<br>width,<br>height,<br>RefreshRate,<br>ColorBitDepth<br><br>※このパラメータは<br>一行で記述します<br><br><!-- /旧バージョン --><!-- 新旧の書き分け --><b class="ver-new">[新バージョン]</b><br><!-- /新旧の書き分け -->window_fullscreen</td>
+					<td>フルスクリーン表示となります。<br><br><!-- 旧バージョン --><b class="ver-old">[旧バージョン]</b>(※OSにより機能しないことがあります。)<br>width,heightにそれぞれスクリーンの横縦サイズをピクセル単位で指定し、<br>RefreshRate,ColorBitDepthにモニター周波数、カラービット数を指定します。<br>設定する値の意味が理解できない場合は、以下の『diagnose=2』パラメータを実行して、その結果を入力してください。<br><br><!-- /旧バージョン --><!-- 新旧の書き分け --><b class="ver-new">[新バージョン]</b><br><!-- /新旧の書き分け -->「=」以降の値は付けずに指定します。<br>画面の解像度は変えずに、デスクトップ全体にゲーム画面を拡大して表示します。<br>ゲーム画面の縦横比は保たれ、余った左右または上下は黒く表示されます。</td>
+				</tr>
+				<tr>
+					<td class="c">framerate=rate</td>
+					<td>ゲームの速さ(1フレームの時間)の設定となります。<br>rateに1フレームの時間をミリ秒単位で1～100の間にて指定します。値が小さいほどゲームが速く動きます。<br>範囲を外れた場合や、このパラメータを指定しない場合は、17(1秒間に約59フレーム)となります。<br>この設定はプレー中にF7キー(値を下げる)、F8キー(値を上げる)にて変更が可能です。</td>
+				</tr>
+				<tr>
+					<td class="c">sound_enable=mode</td>
+					<td>音を鳴らす設定となります。<br>modeに1を設定するとON(有音)に、0を設定するとOFF(無音)になります。<br>このパラメータを指定しない場合は、1(ON)となります。<!-- 旧バージョン --><br><br><b class="ver-old">[旧バージョン]</b><br>0(OFF)で起動した場合は、プレー中にF5キーを押しても音は鳴りません。<br>1(ON)で起動した場合は、プレー中にF5キーにてON/OFF切り替えが可能です。<!-- /旧バージョン --><br><br><!-- 新旧の書き分け --><b class="ver-new">[新バージョン]</b><br><!-- /新旧の書き分け -->0(OFF)で起動した場合も、プレー中にF5キーにてON/OFF切り替えが可能です。</td>
+				</tr>
 <!-- 旧バージョン -->
-<tr>
-	<td align="center"><font color="#FF0000"><b>[旧バージョン]</b></font><br>bgm_external=mode</td>
-	<td>BGMの外部読み込み設定となります。<br>modeに1を設定すると外部読み込みに、0を設定すると内部読み込みになります。<br>外部読み込みはユーザー任意のBGMファイルを用意してゲーム中のBGMを鳴らすことができ、内部ファイルはプログラム内に用意してあるBGMを鳴らすことができます。<br>※Ver.01.04以下ではこのパラメータを指定しない場合は、1(外部読み込み)となります。<br>※Ver.01.05以上ではこのパラメータを指定しない場合は、0(内部読み込み)となります。<br>　ただし現在はプログラム内にBGMは殆ど用意されていません。<br><br><font color="#00FFFF"><b>[新バージョン]</b></font><br>このパラメータはありません。新バージョンはBGMが鳴ります。</td>
-</tr>
+				<tr>
+					<td class="c"><b class="ver-old">[旧バージョン]</b><br>bgm_external=mode</td>
+					<td>BGMの外部読み込み設定となります。<br>modeに1を設定すると外部読み込みに、0を設定すると内部読み込みになります。<br>外部読み込みはユーザー任意のBGMファイルを用意してゲーム中のBGMを鳴らすことができ、内部ファイルはプログラム内に用意してあるBGMを鳴らすことができます。<br>※Ver.01.04以下ではこのパラメータを指定しない場合は、1(外部読み込み)となります。<br>※Ver.01.05以上ではこのパラメータを指定しない場合は、0(内部読み込み)となります。<br>　ただし現在はプログラム内にBGMは殆ど用意されていません。<br><br><b class="ver-new">[新バージョン]</b><br>このパラメータはありません。新バージョンはBGMが鳴ります。</td>
+				</tr>
 <!-- /旧バージョン -->
 <!-- 旧バージョン -->
-<tr>
-	<td align="center"><font color="#FF0000"><b>[旧バージョン]</b></font><br>draw_mode=mode</td>
-	<td>内部で行っている描画処理の設定となります。<br>modeに1を設定するとpaintImmediatelyにて描画を、0を設定するとrepaintにて描画を行います。<br>このパラメータは描画処理が正しく処理しない場合にのみ有効なものとなります。<br>特に描画に問題がない場合は指定をする必要はありません。<br><br><font color="#00FFFF"><b>[新バージョン]</b></font><br>このパラメータはありません。</td>
-</tr>
+				<tr>
+					<td class="c"><b class="ver-old">[旧バージョン]</b><br>draw_mode=mode</td>
+					<td>内部で行っている描画処理の設定となります。<br>modeに1を設定するとpaintImmediatelyにて描画を、0を設定するとrepaintにて描画を行います。<br>このパラメータは描画処理が正しく処理しない場合にのみ有効なものとなります。<br>特に描画に問題がない場合は指定をする必要はありません。<br><br><b class="ver-new">[新バージョン]</b><br>このパラメータはありません。</td>
+				</tr>
 <!-- /旧バージョン -->
-<tr>
-	<td align="center">draw_detail_level=mode</td>
-	<td>描画処理詳細度の設定となります。<br>modeに0～2を指定して詳細度レベルを設定します。<br>0にて全てを描画、1にて最背面の背景描画の抑制、2にて背景前景の描画の抑制を行います。<br>このパラメータは実行する環境で処理が間に合わない(スローモーションになる)場合に有効です。<br>範囲を外れた場合や、このパラメータを指定しない場合は、0(全てを描画)となります。<br>この設定はプレー中にF2キーにてレベル1のON/OFF、F3キーにてレベル2のON/OFFの切り替えが可能です。</td>
-</tr>
+				<tr>
+					<td class="c">draw_detail_level=mode</td>
+					<td>描画処理詳細度の設定となります。<br>modeに0～2を指定して詳細度レベルを設定します。<br>0にて全てを描画、1にて最背面の背景描画の抑制、2にて背景前景の描画の抑制を行います。<br>このパラメータは実行する環境で処理が間に合わない(スローモーションになる)場合に有効です。<br>範囲を外れた場合や、このパラメータを指定しない場合は、0(全てを描画)となります。<br>この設定はプレー中にF2キーにてレベル1のON/OFF、F3キーにてレベル2のON/OFFの切り替えが可能です。</td>
+				</tr>
 <!-- 旧バージョン -->
-<tr>
-	<td align="center"><font color="#FF0000"><b>[旧バージョン]</b></font><br>diagnose=mode</td>
-	<td>診断モードとなります。<br>modeに1～5を指定してプログラム実行の診断を行えます。<br>※現在は2のみサポートしています。<br><br>【モード2】<br>フルスクリーンサポート診断を行います。<br>実行するとフルスクリーン可能なパラメータが一覧表示されます。このパラメータを起動パラメータに指定して、起動するとフルスクリーン表示が行えます。<br><br>　[例　640x480解像度,60Hz,32bitカラーで指定]<br>　　java -jar ActionGame.jar window_fullscreen=640,480,60,32<br><br><font color="#00FFFF"><b>[新バージョン]</b></font><br>このパラメータはありません。(フルスクリーンは値を付けないwindow_fullscreenで行えます)</td>
-</tr>
+				<tr>
+					<td class="c"><b class="ver-old">[旧バージョン]</b><br>diagnose=mode</td>
+					<td>診断モードとなります。<br>modeに1～5を指定してプログラム実行の診断を行えます。<br>※現在は2のみサポートしています。<br><br>【モード2】<br>フルスクリーンサポート診断を行います。<br>実行するとフルスクリーン可能なパラメータが一覧表示されます。このパラメータを起動パラメータに指定して、起動するとフルスクリーン表示が行えます。<br><br>　[例　640x480解像度,60Hz,32bitカラーで指定]<br>　　java -jar ActionGame.jar window_fullscreen=640,480,60,32<br><br><b class="ver-new">[新バージョン]</b><br>このパラメータはありません。(フルスクリーンは値を付けないwindow_fullscreenで行えます)</td>
+				</tr>
 <!-- /旧バージョン -->
-</table>
-<br>
-<div align="right"><a href="#top">&lt;TOP&gt;</a></div>
-</p>
-<p>
-<a name="boot"></a>
-<br>
-<font color="#FFFF00"><b>【起動画面(IPL画面)】</b></font><br><br>
-　プログラムが起動すると以下の画面が表示されます。<br>
-<br>
-<img src="../images/shot_playing_manual_ipl.png" alt="ROM IPL" border="0"><br>
-<br>
-この画面は内部のキャラクターデータのチェックや等を確認する画面です。<br>
-この処理はスキップすることは可能で、STARTボタン(Qキー、またはEnterキー。<!-- 新旧の書き分け -->新バージョンでは<!-- /新旧の書き分け -->ゲームパッドのSTARTボタンも可)にてスキップが行えます。この処理が終了するとタイトル画面が表示されます。
-<div align="right"><a href="#top">&lt;TOP&gt;</a></div>
-</p>
+			</table>
+			</div>
+			<p class="to-top"><a href="#top">&lt;TOP&gt;</a></p>
 
-<img src="../images/separator_line.png" border="0" alt="">
-<a name="terminate">
-<br>
-<h2><img class="vmid" src="../images/symbol_player.png" border="0" alt="">
-プログラムの終了方法
-<img class="vmid" src="../images/symbol_player_r.png" border="0" alt=""></h2>
-</a>
-<p>
-　Sample Action Gameの終了方法は以下のとおりとなります。<br>
-<br>
-<table width="100%" border="1" cellpadding="2" cellspacing="0" align="center" bgcolor="#000000" class="command_line">
-<tr>
-	<th width="20%" align="center">終了方法</th>
-	<th width="80%">操作</th>
-</tr>
-<tr>
-	<td align="center">スタンダード終了</td>
-	<td>タイトル画面にて"PROGRAM END"を選択して実行をします。<br>選択はWキーもしくはカーソルの↑↓キーにて、実行はQキーまたはEnterキーにて行います。<br><!-- 新旧の書き分け --><font color="#00FFFF"><b>[新バージョン]</b></font><!-- /新旧の書き分け -->ゲームパッドでは、選択はSELECTボタンまたは十字キー↑↓にて、実行はSTARTボタンにて行います。</td>
-</tr>
-<tr>
-	<td align="center">強制終了</td>
-	<td>[Windowsの場合]<br>"Alt + F4"キーを押します。<br><br>[Linuxの場合]<br>Windowマネージャ環境によります。</td>
-</tr>
-</table>
-<br>
-※スタンダード終了も強制終了も違いはありません。
-<div align="right"><a href="#top">&lt;TOP&gt;</a></div>
-</p>
+			<h3 class="sub-title" id="boot">【起動画面(IPL画面)】</h3>
+			<p>プログラムが起動すると以下の画面が表示されます。</p>
+			<div class="figures">
+				<img class="shot" src="../images/shot_playing_manual_ipl.png" width="256" height="240" alt="ROM IPL">
+			</div>
+			<p class="no-indent">この画面は内部のキャラクターデータのチェックや等を確認する画面です。<br>
+			この処理はスキップすることは可能で、STARTボタン(Qキー、またはEnterキー。<!-- 新旧の書き分け -->新バージョンでは<!-- /新旧の書き分け -->ゲームパッドのSTARTボタンも可)にてスキップが行えます。この処理が終了するとタイトル画面が表示されます。</p>
+			<p class="to-top"><a href="#top">&lt;TOP&gt;</a></p>
 
-<img src="../images/separator_line.png" border="0" alt="">
-<a name="controller">
-<br>
-<h2><img class="vmid" src="../images/symbol_player.png" border="0" alt="">
-操作キー
-<img class="vmid" src="../images/symbol_player_r.png" border="0" alt=""></h2>
-</a>
-<p>
-　Sample Action Gameの操作キーは以下のとおりとなります。
-<br>
-<a name="controller_main"></a>
-<br>
-<font color="#FFFF00"><b>【プレイヤー操作キー】</b></font><br>
-<br>
-<table width="100%" border="1" cellpadding="2" cellspacing="0" align="center" bgcolor="#000000" class="command_line">
-<tr>
-	<th width="15%" align="center">アクション</th>
-	<th width="20%">キーボード</th>
-	<th width="20%">ゲームパッド<!-- 新旧の書き分け --><br><font color="#00FFFF"><b>[新バージョン]</b></font><!-- /新旧の書き分け --></th>
-	<th width="45%">説明</th>
-</tr>
-<tr>
-	<td align="center">START／PAUSE</td>
-	<td align="center">Q または Enter</td>
-	<td align="center">START</td>
-	<td>[タイトル画面]<br>　カーソルが選択している内容の実行となります。<br><br>[ゲーム中]<br>プレーの一時停止／再開となります。</td>
-</tr>
-<tr>
-	<td align="center">選択<br><img src="../images/symbol_title_cursor.png" border="0" alt=""></td>
-	<td align="center">W または カーソルキー↑↓</td>
-	<td align="center">SELECT または 十字キー↑↓</td>
-	<td>[タイトル画面]<br>　カーソルの移動を行います。</td>
-</tr>
-<tr>
-	<td align="center">移動<br><img src="../images/symbol_player_1.png" border="0" alt=""><img src="../images/symbol_player_2.png" border="0" alt=""></td>
-	<td align="center">カーソルキー ← →</td>
-	<td align="center">十字キー ← →<br>または 左スティック</td>
-	<td>プレイヤーの左右移動を行います。</td>
-</tr>
-<tr>
-	<td align="center">しゃがむ<br><img src="../images/symbol_player_3.png" border="0" alt=""></td>
-	<td align="center">カーソルキー ↓</td>
-	<td align="center">十字キー ↓<br>または 左スティック</td>
-	<td>プレイヤーをしゃがませます。<br>足元の攻撃などを回避する際にしゃがませます。</td>
-</tr>
-<tr>
-	<td align="center">攻撃<br><img src="../images/symbol_player_4.png" border="0" alt=""></td>
-	<td align="center">Z</td>
-	<td align="center">Xbox系: X または B<br>PlayStation系: □ または ○<br>(左右のボタン)</td>
-	<td>剣を振って攻撃を行います。<br>しゃがんでいる場合、ジャンプ中も攻撃可能です。攻撃中は盾の防御を行いません。</td>
-</tr>
-<tr>
-	<td align="center">防御<br><img src="../images/symbol_player_5.png" border="0" alt=""></td>
-	<td align="center" colspan="2">攻撃をしない</td>
-	<td>攻撃をしていない(剣を振っていない)場合は盾を構えた防御となります。</td>
-</tr>
-<tr>
-	<td align="center">ジャンプ<br><img src="../images/symbol_player_6.png" border="0" alt=""></td>
-	<td align="center">X</td>
-	<td align="center">Xbox系: A<br>PlayStation系: ×<br>(下のボタン)</td>
-	<td>ジャンプを行います。</td>
-</tr>
-<tr>
-	<td align="center">フロアを降りる</td>
-	<td align="center">カーソル↓ + X</td>
-	<td align="center">↓ + ジャンプ</td>
-	<td>しゃがんでいる状態でジャンプを行うと、薄い床を降りる事ができます。</td>
-</tr>
-</table>
-<br>
-<font color="#FF0000">
-※タイトル画面でキー入力を行わないでしばらくすると、操作に関するデモが始まるので参考にしてください。<br>
-</font>
-<br>
-<!-- 新旧の書き分け --><font color="#00FFFF"><b>[新バージョン]</b></font><br><!-- /新旧の書き分け -->
-　Xbox系・PlayStation系などのゲームパッドで遊ぶことができます。<!-- 新旧の書き分け -->旧バージョン(Java版)はキーボードのみとなります。<!-- /新旧の書き分け --><br>
-ゲームパッドとキーボードは同時に使うことができます。下の特殊設定キーはキーボードのみとなります。<br>
-<br>
-<a name="controller_sub"></a>
-<br>
-<font color="#FFFF00"><b>【特殊設定キー】</b></font><br>
-<br>
-<table width="100%" border="1" cellpadding="2" cellspacing="0" align="center" bgcolor="#000000" class="command_line">
-<tr>
-	<th width="15%" align="center">設定</th>
-	<th width="10%">キー</th>
-	<th width="50%">説明</th>
-</tr>
-<tr>
-	<td align="center">描画処理設定1</td>
-	<td align="center">F2</td>
-	<td>描画処理詳細度レベル1のON／OFF(切り替え式)となります。<br>最背面の背景描画の抑制を行います。</td>
-</tr>
-<tr>
-	<td align="center">描画処理設定2</td>
-	<td align="center">F3</td>
-	<td>描画処理詳細度レベル2のON／OFF(切り替え式)となります。<br>最背面と背景前景の背景描画の抑制を行います。</td>
-</tr>
-<tr>
-	<td align="center">BGMのON／OFF</td>
-	<td align="center">F4</td>
-	<td>BGMのON／OFF(切り替え式)となります。</td>
-</tr>
-<tr>
-	<td align="center">音声のON／OFF</td>
-	<td align="center">F5</td>
-	<td>音全体のON／OFF(切り替え式)となります。</td>
-</tr>
-<tr>
-	<td align="center">フレームレート減少</td>
-	<td align="center">F7</td>
-	<td>フレームレート値を下げます。<br>CPU処理に余裕がある場合はゲームスピードが上がります。<br>(動作が速くなります)</td>
-</tr>
-<tr>
-	<td align="center">フレームレート増加</td>
-	<td align="center">F8</td>
-	<td>フレームレート値を上げます。<br>ゲームスピードが下がります。(動作が遅くなります)</td>
-</tr>
-<tr>
-	<td align="center">スクリーンショット</td>
-	<td align="center">F12</td>
-	<td>プレー画面のスクリーンショットを撮ります。<br>保存される場所はプログラムを実行したディレクトリ直下の"shot"ディレクトリとなります。もしも存在しない場合はshotディレクトリが生成されます。<br>ファイル名は"screen[日付時刻].png"となり、ビットマップフォーマットはPNG形式となります。</td>
-</tr>
-</table>
-<br>
-<div align="right"><a href="#top">&lt;TOP&gt;</a></div>
-</p>
+			<h2 class="chapter-title" id="terminate"><img src="../images/symbol_player.png" width="50" height="27" alt=""> ２．プログラムの終了方法 <img src="../images/symbol_player_r.png" width="50" height="27" alt=""></h2>
+			<p>Sample Action Gameの終了方法は以下のとおりとなります。</p>
+			<div class="table-wrap">
+			<table class="data">
+				<tr>
+					<th style="width: 20%">終了方法</th>
+					<th>操作</th>
+				</tr>
+				<tr>
+					<td class="c">スタンダード終了</td>
+					<td>タイトル画面にて"PROGRAM END"を選択して実行をします。<br>選択はWキーもしくはカーソルの↑↓キーにて、実行はQキーまたはEnterキーにて行います。<br><!-- 新旧の書き分け --><b class="ver-new">[新バージョン]</b><!-- /新旧の書き分け -->ゲームパッドでは、選択はSELECTボタンまたは十字キー↑↓にて、実行はSTARTボタンにて行います。</td>
+				</tr>
+				<tr>
+					<td class="c">強制終了</td>
+					<td>[Windowsの場合]<br>"Alt + F4"キーを押します。<br><br>[Linuxの場合]<br>Windowマネージャ環境によります。</td>
+				</tr>
+			</table>
+			</div>
+			<p class="no-indent">※スタンダード終了も強制終了も違いはありません。</p>
+			<p class="to-top"><a href="#top">&lt;TOP&gt;</a></p>
 
-<img src="../images/separator_line.png" border="0" alt="">
-<a name="screen">
-<br>
-<h2><img class="vmid" src="../images/symbol_player.png" border="0" alt="">
-画面の表示内容
-<img class="vmid" src="../images/symbol_player_r.png" border="0" alt=""></h2>
-</a>
-　Sample Action Gameに表示される画面の説明を行います。<br>
+			<h2 class="chapter-title" id="controller"><img src="../images/symbol_player.png" width="50" height="27" alt=""> ３．操作キー <img src="../images/symbol_player_r.png" width="50" height="27" alt=""></h2>
+			<p>Sample Action Gameの操作キーは以下のとおりとなります。</p>
 
-<p>
-<a name="screen_title">
-<br>
-<font color="#FFFF00"><b>【タイトル画面】</b></font><br>
-</a>
-<br>
-<table width="100%" border="1" cellpadding="2" cellspacing="0" align="center" bgcolor="#000000" class="command_line">
-<tr>
-	<td width="0%" align="center" rowspan="11"><img src="../images/shot_playing_manual_title2.png" border="0" alt=""></td>
-	<th width="5%" align="center">No.</th>
-	<th width="20%" align="center">項目</th>
-	<th width="50%" align="center">説明</th>
-</tr>
-<tr>
-	<td align="center">1</td>
-	<td align="center">タイトル</td>
-	<td>Sample Action Gameのタイトルとなります。</td>
-</tr>
-<tr>
-	<td align="center">2</td>
-	<td align="center">選択カーソル</td>
-	<td>実行を行う項目を示すカーソルとなります。<br>Wキーまたは↑↓キーにて選択を変更でき、QキーまたはEnterキーにて選択した項目を実行します。</td>
-</tr>
-<tr>
-	<td align="center">3</td>
-	<td align="center">初回スタート</td>
-	<td>ステージ1からゲームスタートを行います。</td>
-</tr>
-<tr>
-	<td align="center">4</td>
-	<td align="center">コンティニュー</td>
-	<td>ゲームオーバー後にゲームオーバーとなったステージより再プレーが行えます。<br>最初は表示されず、初回スタートにて3回分の回数が設定されて表示されるようになります。使用毎に回数が減り、回数が0になると表示されなくなります。</td>
-</tr>
-<tr>
-	<td align="center">5</td>
-	<td align="center">ゲーム終了</td>
-	<td>Sample Action Gameを終了します。</td>
-</tr>
-<tr>
-	<td align="center">6</td>
-	<td align="center">著作権</td>
-	<td>著作権表示となります。</td>
-</tr>
-</table>
-<br>
-※タイトル画面でキー入力を行わないでしばらくすると、操作やゲームプレーデモが始まります。<br>
-</p>
+			<h3 class="sub-title" id="controller_main">【プレイヤー操作キー】</h3>
+			<div class="table-wrap">
+			<table class="data wide">
+				<tr>
+					<th style="width: 15%">アクション</th>
+					<th style="width: 20%">キーボード</th>
+					<th style="width: 20%">ゲームパッド<!-- 新旧の書き分け --><br><b class="ver-new">[新バージョン]</b><!-- /新旧の書き分け --></th>
+					<th>説明</th>
+				</tr>
+				<tr>
+					<td class="c">START／PAUSE</td>
+					<td class="c">Q または Enter</td>
+					<td class="c">START</td>
+					<td>[タイトル画面]<br>　カーソルが選択している内容の実行となります。<br><br>[ゲーム中]<br>プレーの一時停止／再開となります。</td>
+				</tr>
+				<tr>
+					<td class="c">選択<br><img src="../images/symbol_title_cursor.png" alt=""></td>
+					<td class="c">W または カーソルキー↑↓</td>
+					<td class="c">SELECT または 十字キー↑↓</td>
+					<td>[タイトル画面]<br>　カーソルの移動を行います。</td>
+				</tr>
+				<tr>
+					<td class="c">移動<br><img src="../images/symbol_player_1.png" width="32" height="32" alt=""><img src="../images/symbol_player_2.png" width="32" height="32" alt=""></td>
+					<td class="c">カーソルキー ← →</td>
+					<td class="c">十字キー ← →<br>または 左スティック</td>
+					<td>プレイヤーの左右移動を行います。</td>
+				</tr>
+				<tr>
+					<td class="c">しゃがむ<br><img src="../images/symbol_player_3.png" width="32" height="32" alt=""></td>
+					<td class="c">カーソルキー ↓</td>
+					<td class="c">十字キー ↓<br>または 左スティック</td>
+					<td>プレイヤーをしゃがませます。<br>足元の攻撃などを回避する際にしゃがませます。</td>
+				</tr>
+				<tr>
+					<td class="c">攻撃<br><img src="../images/symbol_player_4.png" width="32" height="32" alt=""></td>
+					<td class="c">Z</td>
+					<td class="c">Xbox系: X または B<br>PlayStation系: □ または ○<br>(左右のボタン)</td>
+					<td>剣を振って攻撃を行います。<br>しゃがんでいる場合、ジャンプ中も攻撃可能です。攻撃中は盾の防御を行いません。</td>
+				</tr>
+				<tr>
+					<td class="c">防御<br><img src="../images/symbol_player_5.png" width="32" height="32" alt=""></td>
+					<td class="c" colspan="2">攻撃をしない</td>
+					<td>攻撃をしていない(剣を振っていない)場合は盾を構えた防御となります。</td>
+				</tr>
+				<tr>
+					<td class="c">ジャンプ<br><img src="../images/symbol_player_6.png" width="32" height="32" alt=""></td>
+					<td class="c">X</td>
+					<td class="c">Xbox系: A<br>PlayStation系: ×<br>(下のボタン)</td>
+					<td>ジャンプを行います。</td>
+				</tr>
+				<tr>
+					<td class="c">フロアを降りる</td>
+					<td class="c">カーソル↓ + X</td>
+					<td class="c">↓ + ジャンプ</td>
+					<td>しゃがんでいる状態でジャンプを行うと、薄い床を降りる事ができます。</td>
+				</tr>
+			</table>
+			</div>
+			<p class="no-indent warn">※タイトル画面でキー入力を行わないでしばらくすると、操作に関するデモが始まるので参考にしてください。</p>
+<!-- 新旧の書き分け -->
+			<p class="ver-title ver-new">[新バージョン]</p>
+<!-- /新旧の書き分け -->
+			<p>Xbox系・PlayStation系などのゲームパッドで遊ぶことができます。<!-- 新旧の書き分け -->旧バージョン(Java版)はキーボードのみとなります。<!-- /新旧の書き分け --><br>
+			ゲームパッドとキーボードは同時に使うことができます。下の特殊設定キーはキーボードのみとなります。</p>
 
-<p>
-<a name="screen_stage_start">
-<br>
-<font color="#FFFF00"><b>【ステージ開始画面】</b></font><br>
-</a>
-<br>
-<table width="100%" border="1" cellpadding="2" cellspacing="0" align="center" bgcolor="#000000" class="command_line">
-<tr>
-	<td width="0%" align="center" rowspan="11"><img src="../images/shot_playing_manual_stage_start.png" border="0" alt=""></td>
-	<th width="5%" align="center">No.</th>
-	<th width="20%" align="center">項目</th>
-	<th width="50%" align="center">説明</th>
-</tr>
-<tr>
-	<td align="center">1</td>
-	<td align="center">ステージ番号</td>
-	<td>現在のステージ番号となります。</td>
-</tr>
-<tr>
-	<td align="center">2</td>
-	<td align="center">ステージ名</td>
-	<td>ステージにつけられた名称となります。</td>
-</tr>
-<tr>
-	<td align="center">3</td>
-	<td align="center">プレイヤー地点</td>
-	<td>プレイヤーの現在位置となります。</td>
-</tr>
-<tr>
-	<td align="center">4</td>
-	<td align="center">進行状況</td>
-	<td>クリアしたステージの進行状況となります。<br>部屋の形で塗りつぶされていきます。</td>
-</tr>
-</table>
-</p>
+			<h3 class="sub-title" id="controller_sub">【特殊設定キー】</h3>
+			<div class="table-wrap">
+			<table class="data">
+				<tr>
+					<th style="width: 20%">設定</th>
+					<th style="width: 12%">キー</th>
+					<th>説明</th>
+				</tr>
+				<tr>
+					<td class="c">描画処理設定1</td>
+					<td class="c">F2</td>
+					<td>描画処理詳細度レベル1のON／OFF(切り替え式)となります。<br>最背面の背景描画の抑制を行います。</td>
+				</tr>
+				<tr>
+					<td class="c">描画処理設定2</td>
+					<td class="c">F3</td>
+					<td>描画処理詳細度レベル2のON／OFF(切り替え式)となります。<br>最背面と背景前景の背景描画の抑制を行います。</td>
+				</tr>
+				<tr>
+					<td class="c">BGMのON／OFF</td>
+					<td class="c">F4</td>
+					<td>BGMのON／OFF(切り替え式)となります。</td>
+				</tr>
+				<tr>
+					<td class="c">音声のON／OFF</td>
+					<td class="c">F5</td>
+					<td>音全体のON／OFF(切り替え式)となります。</td>
+				</tr>
+				<tr>
+					<td class="c">フレームレート減少</td>
+					<td class="c">F7</td>
+					<td>フレームレート値を下げます。<br>CPU処理に余裕がある場合はゲームスピードが上がります。<br>(動作が速くなります)</td>
+				</tr>
+				<tr>
+					<td class="c">フレームレート増加</td>
+					<td class="c">F8</td>
+					<td>フレームレート値を上げます。<br>ゲームスピードが下がります。(動作が遅くなります)</td>
+				</tr>
+				<tr>
+					<td class="c">スクリーンショット</td>
+					<td class="c">F12</td>
+					<td>プレー画面のスクリーンショットを撮ります。<br>保存される場所はプログラムを実行したディレクトリ直下の"shot"ディレクトリとなります。もしも存在しない場合はshotディレクトリが生成されます。<br>ファイル名は"screen[日付時刻].png"となり、ビットマップフォーマットはPNG形式となります。</td>
+				</tr>
+			</table>
+			</div>
+			<p class="to-top"><a href="#top">&lt;TOP&gt;</a></p>
 
-<p>
-<a name="screen_play">
-<br>
-<font color="#FFFF00"><b>【プレー画面】</b></font><br>
-</a>
-<br>
-<table width="100%" border="1" cellpadding="2" cellspacing="0" align="center" bgcolor="#000000" class="command_line">
-<tr>
-	<td width="0%" align="center" rowspan="11"><img src="../images/shot_playing_manual_play.png" border="0" alt=""></td>
-	<th width="5%" align="center">No.</th>
-	<th width="20%" align="center">項目</th>
-	<th width="50%" align="center">説明</th>
-</tr>
-<tr>
-	<td align="center">1</td>
-	<td align="center">プレイヤー</td>
-	<td>プレイヤーの騎士となります。</td>
-</tr>
-<tr>
-	<td align="center">2</td>
-	<td align="center">ライフ</td>
-	<td>プレイヤーのライフとなります。<br>水色の部分が全て無くなるとミスとなります。</td>
-</tr>
-<tr>
-	<td align="center">3</td>
-	<td align="center">クリアキー</td>
-	<td>クリアドアを開けるための鍵となります。</td>
-</tr>
-<tr>
-	<td align="center">4</td>
-	<td align="center">クリアドア</td>
-	<td>次のステージに進むためのドアとなります。</td>
-</tr>
-<tr>
-	<td align="center">5</td>
-	<td align="center">スタートドア</td>
-	<td>前のステージから来た場所となります。</td>
-</tr>
-<tr>
-	<td align="center">6</td>
-	<td align="center">メッセージ</td>
-	<td>プレイヤーに対するゲーム進行のためのメッセージとなります。</td>
-</tr>
-<tr>
-	<td align="center">7</td>
-	<td align="center">プレイヤー残</td>
-	<td>残りのプレイヤー数となります。</td>
-</tr>
-<tr>
-	<td align="center">8</td>
-	<td align="center">入手アイテム</td>
-	<td>プレイヤーが入手したアイテムとなります。<br>アイテムにより入手後に非表示になるものもあります。</td>
-</tr>
-<tr>
-	<td align="center">9</td>
-	<td align="center">残り時間</td>
-	<td>ステージに与えられている時間となります。<br>時間が0になるとタイムアウト攻撃が始まります。</td>
-</tr>
-<tr>
-	<td align="center">10</td>
-	<td align="center">ステージ番号</td>
-	<td>現在のステージとなります。</td>
-</tr>
-</table>
-<br>
-<div align="right"><a href="#top">&lt;TOP&gt;</a></div>
-</p>
+			<h2 class="chapter-title" id="screen"><img src="../images/symbol_player.png" width="50" height="27" alt=""> ４．画面の表示内容 <img src="../images/symbol_player_r.png" width="50" height="27" alt=""></h2>
+			<p>Sample Action Gameに表示される画面の説明を行います。</p>
 
-<img src="../images/separator_line.png" border="0" alt="">
-<a name="playing">
-<br>
-<h2><img class="vmid" src="../images/symbol_player.png" border="0" alt="">
-ゲーム進行について
-<img class="vmid" src="../images/symbol_player_r.png" border="0" alt=""></h2>
-</a>
-<p>
-　Sample Action Gameのステージ全体は建物(塔)となっており、頂上に呪いのかけられたクリスタルが存在します。プレイヤーの目的はこの呪いのクリスタルの破壊が目的となります。<br>
-</p>
-<p>
-<a name="playing_stage_clear">
-<br>
-<font color="#FFFF00"><b>【ステージクリア方法】</b></font><br>
-</a>
-<br>
-　Sample Action Gameはステージクリアタイプのアクションゲームとなり、各ステージに存在する鍵(クリアキー)を入手し、次のステージに繋がる扉(クリアドア)を開けて進んでいきます。<br>
-鍵はステージに置いてあるものもあれば、モンスター(敵キャラクター)が隠し持っている場合など様々となります。<br>
-<br>
-<table width="100%" border="1" cellpadding="2" cellspacing="0" align="center" bgcolor="#000000" class="command_line">
-<tr>
-	<td align="center"><img src="../images/shot_playing_manual_stage_clear.png" border="0" alt=""></td>
-</tr>
-<tr>
-	<td>【例　ステージ1の場合】<br>　１．塔の入り口を守るサイクロプスを倒すと鍵が出現します。<br>　２．鍵の入手後、クリアドアにプレイヤーを触れさせると扉が開きます。<br>　３．開ききった後の扉の空間にプレイヤーを触れさせるとステージクリアとなります。</td>
-</tr>
-</table>
-</p>
+			<h3 class="sub-title" id="screen_title">【タイトル画面】</h3>
+			<div class="screen-figure">
+				<img class="shot" src="../images/shot_playing_manual_title2.png" width="256" height="240" alt="タイトル画面 (番号付き)">
+				<table class="data">
+					<tr>
+						<th>No.</th>
+						<th>項目</th>
+						<th>説明</th>
+					</tr>
+					<tr>
+						<td class="c">1</td>
+						<td class="c">タイトル</td>
+						<td>Sample Action Gameのタイトルとなります。</td>
+					</tr>
+					<tr>
+						<td class="c">2</td>
+						<td class="c">選択カーソル</td>
+						<td>実行を行う項目を示すカーソルとなります。<br>Wキーまたは↑↓キーにて選択を変更でき、QキーまたはEnterキーにて選択した項目を実行します。</td>
+					</tr>
+					<tr>
+						<td class="c">3</td>
+						<td class="c">初回スタート</td>
+						<td>ステージ1からゲームスタートを行います。</td>
+					</tr>
+					<tr>
+						<td class="c">4</td>
+						<td class="c">コンティニュー</td>
+						<td>ゲームオーバー後にゲームオーバーとなったステージより再プレーが行えます。<br>最初は表示されず、初回スタートにて3回分の回数が設定されて表示されるようになります。使用毎に回数が減り、回数が0になると表示されなくなります。</td>
+					</tr>
+					<tr>
+						<td class="c">5</td>
+						<td class="c">ゲーム終了</td>
+						<td>Sample Action Gameを終了します。</td>
+					</tr>
+					<tr>
+						<td class="c">6</td>
+						<td class="c">著作権</td>
+						<td>著作権表示となります。</td>
+					</tr>
+				</table>
+			</div>
+			<p class="no-indent">※タイトル画面でキー入力を行わないでしばらくすると、操作やゲームプレーデモが始まります。</p>
 
-<p>
-<a name="playing_powerup">
-<br>
-<font color="#FFFF00"><b>【パワーアップと宝箱について】</b></font><br>
-</a>
-<br>
-　プレイヤーは各ステージに隠されているパワーアップアイテムを見つけ出しパワーアップすることができます。<br>
-パワーアップアイテムにはプレイヤーのライフの上限を上げるもの、各ステージの持ち時間を増やすもの、プレイヤーの攻撃、防御力を上げるもの等、様々なものが存在します。<br>
-　パワーアップアイテムは宝箱に入っており、この宝箱のアイテムを入手することが本ゲームの要となります。<br>
-宝箱出現方法については<font color="#00FF00">【ステージ5 [First indicate.]】</font>の宝箱のアイテムである<font color="#00FFFF">【メガネ [Glass]】</font>を入手することにより、ヒントを入手することができます。<br>
-<br>
-<table width="80%" border="0" cellpadding="3" cellspacing="0" align="center" bgcolor="#000000" class="command_line">
-<tr>
-	<td width="32" height="32" align="center"><img src="../images/symbol_treasurebox.png" border="0" alt=""></td>
-	<td width="30" align="center">...</td>
-	<td width="60" align="center">宝箱</td>
-	<td>パワーアップアイテムが入っています。</td>
-</tr>
-<tr>
-	<td width="32" height="32" align="center"><img src="../images/symbol_bell.png" border="0" alt=""></td>
-	<td width="30" align="center">...</td>
-	<td width="60" align="center">ベル</td>
-	<td>宝物が出現すると知らせてくれます。</td>
-</tr>
-<tr>
-	<td width="32" height="32" align="center"><img src="../images/symbol_heart.png" border="0" alt=""></td>
-	<td width="30" align="center">...</td>
-	<td width="60" align="center">ハート</td>
-	<td>プレイヤーのライフの上限が上がります。</td>
-</tr>
-<tr>
-	<td width="32" height="32" align="center"><img src="../images/symbol_glass.png" border="0" alt=""></td>
-	<td width="30" align="center">...</td>
-	<td width="60" align="center">メガネ</td>
-	<td>プレー中にPAUSEを行うと覗くことができます。<br>宝箱出現のヒントやプレー進行のヒントが見えてきます。</td>
-</tr>
-<tr>
-	<td width="32" height="32" align="center"><img src="../images/symbol_time_increase.png" border="0" alt=""></td>
-	<td width="30" align="center">...</td>
-	<td width="60" align="center">砂時計</td>
-	<td>各ステージの持ち時間が増えます。<br></td>
-</tr>
-<tr>
-	<td width="32" height="32" align="center"><img src="../images/symbol_potion.png" border="0" alt=""></td>
-	<td width="30" align="center">...</td>
-	<td width="60" align="center">ポーション</td>
-	<td>プレイヤーのライフが回復します。<br>ポーションの形状により回復度合いが変わります。<br></td>
-</tr>
-</table>
-<br>
-<table width="100%" border="1" cellpadding="2" cellspacing="0" align="center" bgcolor="#000000" class="command_line">
-<tr>
-	<td align="center"><img src="../images/shot_playing_manual_1st_treasure.png" border="0" alt=""></td>
-</tr>
-<tr>
-	<td>【例　ステージ1の場合】<br>　金色のコウモリを倒すと塔の側辺りに宝箱が出現します。<br>　宝箱にはベルが入っています。</td>
-</tr>
-</table>
-<br>
-<div align="right"><a href="#top">&lt;TOP&gt;</a></div>
-</p>
+			<h3 class="sub-title" id="screen_stage_start">【ステージ開始画面】</h3>
+			<div class="screen-figure">
+				<img class="shot" src="../images/shot_playing_manual_stage_start.png" width="256" height="240" alt="ステージ開始画面 (番号付き)">
+				<table class="data">
+					<tr>
+						<th>No.</th>
+						<th>項目</th>
+						<th>説明</th>
+					</tr>
+					<tr>
+						<td class="c">1</td>
+						<td class="c">ステージ番号</td>
+						<td>現在のステージ番号となります。</td>
+					</tr>
+					<tr>
+						<td class="c">2</td>
+						<td class="c">ステージ名</td>
+						<td>ステージにつけられた名称となります。</td>
+					</tr>
+					<tr>
+						<td class="c">3</td>
+						<td class="c">プレイヤー地点</td>
+						<td>プレイヤーの現在位置となります。</td>
+					</tr>
+					<tr>
+						<td class="c">4</td>
+						<td class="c">進行状況</td>
+						<td>クリアしたステージの進行状況となります。<br>部屋の形で塗りつぶされていきます。</td>
+					</tr>
+				</table>
+			</div>
 
-<p>
-<a name="playing_early_stage">
-<br>
-<font color="#FFFF00"><b>【序盤ステージのプレー進行アドバイス】</b></font><br>
-</a>
-<br>
-　Sample Action Gameは80年代のゲームをお手本にしているため、プレーを始めると<br>
-<font color="#FF6161"><b>「ステージの進め方が分からない！放り出された！」</b></font>や<br>
-<font color="#FF0000"><b>「割と難易度が高く感じる！」</b></font><br>
-等を感じるかもしれません。<br>
-<br>
-　ここでは序盤ステージの一部の説明と難易度の高いと思われる箇所をダイジェストに紹介していきます。<br>
-<br>
-<table width="100%" border="1" cellpadding="3" cellspacing="0" align="center" bgcolor="#000000" class="command_line">
-<tr>
-	<td><img src="../images/shot_early_01_01.png" border="0" alt=""></td>
-	<td width="90%" valign="top">
-No.01 <font color="#8080FF">【Stage 01／The beginning.】</font><br>
-スタート地点から右に進んで最初のポイント。<br>
-封印が3つ浮いているので、ジャンプで木に登りながら剣で全てを破壊してください。
-	</td>
-</tr>
-<tr>
-	<td><img src="../images/shot_early_01_02.png" border="0" alt=""></td>
-	<td width="90%" valign="top">
-No.02 <font color="#8080FF">【Stage 01／The beginning.】</font><br>
-3つの封印を破壊すると、右のマグマ地帯から浮き島が出現します。<br>
-図の浮き島の位置に来たら端からジャンプ！
-	</td>
-</tr>
-<tr>
-	<td><img src="../images/shot_early_01_03.png" border="0" alt=""></td>
-	<td width="90%" valign="top">
-No.03 <font color="#8080FF">【Stage 01／The beginning.】</font><br>
-島に乗ると右から青コウモリが来るので、剣で攻撃するか何もしないで盾で防ぎます。<br>
-盾で防ぐ場合はプレイヤーが反対に少し跳ね返されるので、島の右側にポジションを置くことがポイントです。
-	</td>
-</tr>
-<tr>
-	<td><img src="../images/shot_early_01_04.png" border="0" alt=""></td>
-	<td width="90%" valign="top">
-No.04 <font color="#8080FF">【Stage 01／The beginning.】</font><br>
-サイクロプス戦です。サイクロプスはプレイヤーが立ち上がっていると顔面を攻撃、しゃがんでいると足元を攻撃してきます。<br>
-弱点は腹部となり、プレイヤーは立ち上がりの攻撃のみダメージを与えられます。(しゃがんでいると攻撃が当たりません)<br>
-サイクロプスは攻撃前にほんの少し溜めの構えを行うので、これを攻撃の合図として攻撃を避けてください。<br>
-攻略法は、歩いてサイクロプスの側に近づき一撃入れて、すかさずしゃがんで上と下の攻撃を受けて後ろに押し戻されることを繰り返すか、歩いてダメージを与えたらすぐに後退をして間合いを開けながら攻撃をする方法があります。<br>
-<br>
-サイクロプスを倒して次のステージに行く前に、金色のコウモリを倒して宝物を取る事を忘れないようにしましょう。
-	</td>
-</tr>
-<tr>
-	<td><img src="../images/shot_early_02_01.png" border="0" alt=""></td>
-	<td width="90%" valign="top">
-No.05 <font color="#969696">【Stage 02／Wizard.】</font><br>
-塔内に入ると次は杖から火の玉を出すウィザード戦です。<br>
-このウィザードの出す火の玉はプレイヤーが立った状態の盾で受けることができます(しゃがむと頭に当たります)。<br>
-ウィザードがワープをして火の玉出した後に攻撃猶予ができるので、近づいて攻撃をしましょう。<br>
-<br>
-この部屋はウィザードを倒すとクリアキーが出現します。<br>
-<br>
-操作に余裕がある場合、ウィザードの火の玉を盾で受けずに全て飛び越えて倒すと...!?
-	</td>
-</tr>
-<tr>
-	<td><img src="../images/shot_early_03_01.png" border="0" alt=""></td>
-	<td width="90%" valign="top">
-No.06 <font color="#00E700">【Stage 03／Green slyme.】</font><br>
-Stage 03はグリーンスライムの部屋です。<br>
-グリーンスライムの攻略はおおよそ地面のレンガ1ブロック分程の間合いを持って攻撃するのがベターです。<br>
-スライムは移動や攻撃前にピクピク動作するので、これを目印に攻撃を行うと良いでしょう。<br>
-<br>
-この部屋はクリアドアが右下、クリアキーが部屋の左上部にあるので、まずは鍵を取るために右側からジグザグに登って行きましょう。
-	</td>
-</tr>
-<tr>
-	<td><img src="../images/shot_early_03_02.png" border="0" alt=""></td>
-	<td width="90%" valign="top">
-No.07 <font color="#00E700">【Stage 03／Green slyme.】</font><br>
-左上部の鍵を取るとレッドスライムが出現します。<br>
-レッドスライムはStage 02のウィザード同様火の玉を出します。<br>
-ウィザードとの違いはプレイヤーの足元に火の玉を出してきます。このためクリアドアへの道はレッドスライムの火の玉をしゃがみながら受けていくことになります。<br>
-<br>
-レッドスライムは3匹出現し、火の玉を出すタイミングは各自決まったタイミングを持っています。「だるまさんが転んだ」の様にレッドスライムに近づいて仕留めましょう。<br>
-<br>
-最下段に出現するレッドスライムはタイミングがとてもタイトなので、倒さずに逃げるようにクリアドアに進むことが可能ですが、邪魔なので退治してしまう方が良い事があるかもしれません。<br>
-	</td>
-</tr>
-<tr>
-	<td><img src="../images/shot_early_04_01.png" border="0" alt=""></td>
-	<td width="90%" valign="top">
-No.08 <font color="#4346C1">【Stage 04／Zombie.】</font><br>
-最初の難関です。部屋の中央に入るとゾンビが2体攻撃を行ってきます。<br>
-ゾンビはゆっくりとプレイヤーに近づきながら放物線に肉片を投げてきます。
-この肉片はプレイヤーの頭部になかなかのコントロールで投げてくるので、盾で受けながら(もしくは移動やジャンプ等で)回避してください。<br>
-放物線はプレイヤーから離れれば離れるほど真上に落ちてくることになるので、この辺りのアルゴリズムを理解すると盾で受けるべきか、移動して避けるべきか判断できると思います。<br>
-ゾンビはウィザードやスライムに比べて耐久力があるので、肉片投球の様子を伺いつつ連続攻撃をして倒してください。<br>
-<br>
-この部屋にはポーションがあるので、もしも前のステージからダメージを多く受けていた場合はステージ開始直後にすぐに取りに行き、ライフの回復をしておくと良いでしょう。
-	</td>
-</tr>
-<tr>
-	<td><img src="../images/shot_early_05_01.png" border="0" alt=""></td>
-	<td width="90%" valign="top">
-No.09 <font color="#ff0000">【Stage 05／First indicate.】</font><br>
-ゲームを進めるにあたり、最初のキーポイントとなるステージです。<br>
-このステージ開始時に見えている宝箱のアイテムはできる限り入手してください。<br>
-この宝箱への道は停止しているゴンドラを始動させる必要があります。その方法は部屋に2箇所あるスイッチを切り替えなければなりません。<br>
-スイッチの切り替えはスイッチに対して剣で攻撃すると切り替えることができるので、部屋内部を探索して見つけ出してください。<br>
-また宝箱への道以外のゴンドラ用スイッチは、切り替えの度にゴンドラの昇降／下降が切り替わります。
-	</td>
-</tr>
-<tr>
-	<td><img src="../images/shot_early_05_02.png" border="0" alt=""></td>
-	<td width="90%" valign="top">
-No.10 <font color="#ff0000">【Stage 05／First indicate.】</font><br>
-宝箱のある場所に到着すると部屋が炎で妨害している状況になっています。<br>
-ここで炎を剣で攻撃すると、あるメッセージが...<br>
-<br>
-このアイテムを入手するとメッセージが出るので支持に従ってみてください。<br>
-英語の意味が不可解の場合は、<a href="#playing_powerup">ここ</a>を参照してください。
-	</td>
-</tr>
-<tr>
-	<td><img src="../images/shot_early_06_01.png" border="0" alt=""></td>
-	<td width="90%" valign="top">
-No.11 <font color="#0000ff">【Stage 06／Advanced wizard.】</font><br>
-Stage 04のゾンビステージに続いて第2の難関です。<br>
-このステージはStage 02のウィザードの強化版が登場します。このウィザードは高速な雷を杖から発射します。しかもプレイヤーの状況に合わせて上部／下部を打ち分けます。そして更に耐久力、移動速度も高いステータスを持つので、このステージに手こずる人も多いかもしれません。しかし、このステージ難易度が問題ないようであれば先のステージも目指しやすいと思いますので是非チャレンジしてみてください。<br>
-<br>
-もしもStage 05のアイテムを入手している場合は、このステージ以降、ステージ開始時にこのアイテムを使用すると良いでしょう。<br>
-	</td>
-</tr>
-</table>
-<br>
-　ここまでが序盤ステージの紹介となります。<br>
-このステージ以降、様々なアクションや敵、アイテム、見せ場等がありますので、多くの人がプレーをしていただけると嬉しく思います。<br>
-<br>
-<br>
+			<h3 class="sub-title" id="screen_play">【プレー画面】</h3>
+			<div class="screen-figure">
+				<img class="shot" src="../images/shot_playing_manual_play.png" width="256" height="240" alt="プレー画面 (番号付き)">
+				<table class="data">
+					<tr>
+						<th>No.</th>
+						<th>項目</th>
+						<th>説明</th>
+					</tr>
+					<tr>
+						<td class="c">1</td>
+						<td class="c">プレイヤー</td>
+						<td>プレイヤーの騎士となります。</td>
+					</tr>
+					<tr>
+						<td class="c">2</td>
+						<td class="c">ライフ</td>
+						<td>プレイヤーのライフとなります。<br>水色の部分が全て無くなるとミスとなります。</td>
+					</tr>
+					<tr>
+						<td class="c">3</td>
+						<td class="c">クリアキー</td>
+						<td>クリアドアを開けるための鍵となります。</td>
+					</tr>
+					<tr>
+						<td class="c">4</td>
+						<td class="c">クリアドア</td>
+						<td>次のステージに進むためのドアとなります。</td>
+					</tr>
+					<tr>
+						<td class="c">5</td>
+						<td class="c">スタートドア</td>
+						<td>前のステージから来た場所となります。</td>
+					</tr>
+					<tr>
+						<td class="c">6</td>
+						<td class="c">メッセージ</td>
+						<td>プレイヤーに対するゲーム進行のためのメッセージとなります。</td>
+					</tr>
+					<tr>
+						<td class="c">7</td>
+						<td class="c">プレイヤー残</td>
+						<td>残りのプレイヤー数となります。</td>
+					</tr>
+					<tr>
+						<td class="c">8</td>
+						<td class="c">入手アイテム</td>
+						<td>プレイヤーが入手したアイテムとなります。<br>アイテムにより入手後に非表示になるものもあります。</td>
+					</tr>
+					<tr>
+						<td class="c">9</td>
+						<td class="c">残り時間</td>
+						<td>ステージに与えられている時間となります。<br>時間が0になるとタイムアウト攻撃が始まります。</td>
+					</tr>
+					<tr>
+						<td class="c">10</td>
+						<td class="c">ステージ番号</td>
+						<td>現在のステージとなります。</td>
+					</tr>
+				</table>
+			</div>
+			<p class="to-top"><a href="#top">&lt;TOP&gt;</a></p>
+
+			<h2 class="chapter-title" id="playing"><img src="../images/symbol_player.png" width="50" height="27" alt=""> ５．ゲーム進行について <img src="../images/symbol_player_r.png" width="50" height="27" alt=""></h2>
+			<p>Sample Action Gameのステージ全体は建物(塔)となっており、頂上に呪いのかけられたクリスタルが存在します。プレイヤーの目的はこの呪いのクリスタルの破壊が目的となります。</p>
+
+			<h3 class="sub-title" id="playing_stage_clear">【ステージクリア方法】</h3>
+			<p>Sample Action Gameはステージクリアタイプのアクションゲームとなり、各ステージに存在する鍵(クリアキー)を入手し、次のステージに繋がる扉(クリアドア)を開けて進んでいきます。<br>
+			鍵はステージに置いてあるものもあれば、モンスター(敵キャラクター)が隠し持っている場合など様々となります。</p>
+			<figure class="example">
+				<img class="shot" src="../images/shot_playing_manual_stage_clear.png" width="600" height="240" alt="ステージ1のクリアの流れ">
+				<figcaption>【例　ステージ1の場合】<br>　１．塔の入り口を守るサイクロプスを倒すと鍵が出現します。<br>　２．鍵の入手後、クリアドアにプレイヤーを触れさせると扉が開きます。<br>　３．開ききった後の扉の空間にプレイヤーを触れさせるとステージクリアとなります。</figcaption>
+			</figure>
+
+			<h3 class="sub-title" id="playing_powerup">【パワーアップと宝箱について】</h3>
+			<p>プレイヤーは各ステージに隠されているパワーアップアイテムを見つけ出しパワーアップすることができます。<br>
+			パワーアップアイテムにはプレイヤーのライフの上限を上げるもの、各ステージの持ち時間を増やすもの、プレイヤーの攻撃、防御力を上げるもの等、様々なものが存在します。</p>
+			<p>パワーアップアイテムは宝箱に入っており、この宝箱のアイテムを入手することが本ゲームの要となります。<br>
+			宝箱出現方法については<span style="color: #00ff00">【ステージ5 [First indicate.]】</span>の宝箱のアイテムである<span style="color: #00ffff">【メガネ [Glass]】</span>を入手することにより、ヒントを入手することができます。</p>
+			<table class="items">
+				<tr><td class="c"><img src="../images/symbol_treasurebox.png" alt=""></td><td class="c">...</td><td class="c">宝箱</td><td>パワーアップアイテムが入っています。</td></tr>
+				<tr><td class="c"><img src="../images/symbol_bell.png" alt=""></td><td class="c">...</td><td class="c">ベル</td><td>宝物が出現すると知らせてくれます。</td></tr>
+				<tr><td class="c"><img src="../images/symbol_heart.png" alt=""></td><td class="c">...</td><td class="c">ハート</td><td>プレイヤーのライフの上限が上がります。</td></tr>
+				<tr><td class="c"><img src="../images/symbol_glass.png" alt=""></td><td class="c">...</td><td class="c">メガネ</td><td>プレー中にPAUSEを行うと覗くことができます。<br>宝箱出現のヒントやプレー進行のヒントが見えてきます。</td></tr>
+				<tr><td class="c"><img src="../images/symbol_time_increase.png" alt=""></td><td class="c">...</td><td class="c">砂時計</td><td>各ステージの持ち時間が増えます。</td></tr>
+				<tr><td class="c"><img src="../images/symbol_potion.png" alt=""></td><td class="c">...</td><td class="c">ポーション</td><td>プレイヤーのライフが回復します。<br>ポーションの形状により回復度合いが変わります。</td></tr>
+			</table>
+			<figure class="example">
+				<img class="shot" src="../images/shot_playing_manual_1st_treasure.png" width="600" height="240" alt="ステージ1の宝箱">
+				<figcaption>【例　ステージ1の場合】<br>　金色のコウモリを倒すと塔の側辺りに宝箱が出現します。<br>　宝箱にはベルが入っています。</figcaption>
+			</figure>
+			<p class="to-top"><a href="#top">&lt;TOP&gt;</a></p>
+
+			<h3 class="sub-title" id="playing_early_stage">【序盤ステージのプレー進行アドバイス】</h3>
+			<p>Sample Action Gameは80年代のゲームをお手本にしているため、プレーを始めると<br>
+			<b style="color: #ff6161">「ステージの進め方が分からない！放り出された！」</b>や<br>
+			<b style="color: #ff0000">「割と難易度が高く感じる！」</b><br>
+			等を感じるかもしれません。</p>
+			<p>ここでは序盤ステージの一部の説明と難易度の高いと思われる箇所をダイジェストに紹介していきます。</p>
+
+			<div class="tip">
+				<img class="shot" src="../images/shot_early_01_01.png" width="256" height="240" alt="">
+				<div>
+					<p class="tip-title">No.01 <span style="color: #8080ff">【Stage 01／The beginning.】</span></p>
+					<p>スタート地点から右に進んで最初のポイント。<br>
+					封印が3つ浮いているので、ジャンプで木に登りながら剣で全てを破壊してください。</p>
+				</div>
+			</div>
+			<div class="tip">
+				<img class="shot" src="../images/shot_early_01_02.png" width="256" height="240" alt="">
+				<div>
+					<p class="tip-title">No.02 <span style="color: #8080ff">【Stage 01／The beginning.】</span></p>
+					<p>3つの封印を破壊すると、右のマグマ地帯から浮き島が出現します。<br>
+					図の浮き島の位置に来たら端からジャンプ！</p>
+				</div>
+			</div>
+			<div class="tip">
+				<img class="shot" src="../images/shot_early_01_03.png" width="256" height="240" alt="">
+				<div>
+					<p class="tip-title">No.03 <span style="color: #8080ff">【Stage 01／The beginning.】</span></p>
+					<p>島に乗ると右から青コウモリが来るので、剣で攻撃するか何もしないで盾で防ぎます。<br>
+					盾で防ぐ場合はプレイヤーが反対に少し跳ね返されるので、島の右側にポジションを置くことがポイントです。</p>
+				</div>
+			</div>
+			<div class="tip">
+				<img class="shot" src="../images/shot_early_01_04.png" width="256" height="240" alt="">
+				<div>
+					<p class="tip-title">No.04 <span style="color: #8080ff">【Stage 01／The beginning.】</span></p>
+					<p>サイクロプス戦です。サイクロプスはプレイヤーが立ち上がっていると顔面を攻撃、しゃがんでいると足元を攻撃してきます。<br>
+					弱点は腹部となり、プレイヤーは立ち上がりの攻撃のみダメージを与えられます。(しゃがんでいると攻撃が当たりません)<br>
+					サイクロプスは攻撃前にほんの少し溜めの構えを行うので、これを攻撃の合図として攻撃を避けてください。<br>
+					攻略法は、歩いてサイクロプスの側に近づき一撃入れて、すかさずしゃがんで上と下の攻撃を受けて後ろに押し戻されることを繰り返すか、歩いてダメージを与えたらすぐに後退をして間合いを開けながら攻撃をする方法があります。</p>
+					<p>サイクロプスを倒して次のステージに行く前に、金色のコウモリを倒して宝物を取る事を忘れないようにしましょう。</p>
+				</div>
+			</div>
+			<div class="tip">
+				<img class="shot" src="../images/shot_early_02_01.png" width="256" height="240" alt="">
+				<div>
+					<p class="tip-title">No.05 <span style="color: #969696">【Stage 02／Wizard.】</span></p>
+					<p>塔内に入ると次は杖から火の玉を出すウィザード戦です。<br>
+					このウィザードの出す火の玉はプレイヤーが立った状態の盾で受けることができます(しゃがむと頭に当たります)。<br>
+					ウィザードがワープをして火の玉出した後に攻撃猶予ができるので、近づいて攻撃をしましょう。</p>
+					<p>この部屋はウィザードを倒すとクリアキーが出現します。</p>
+					<p>操作に余裕がある場合、ウィザードの火の玉を盾で受けずに全て飛び越えて倒すと...!?</p>
+				</div>
+			</div>
+			<div class="tip">
+				<img class="shot" src="../images/shot_early_03_01.png" width="256" height="240" alt="">
+				<div>
+					<p class="tip-title">No.06 <span style="color: #00e700">【Stage 03／Green slyme.】</span></p>
+					<p>Stage 03はグリーンスライムの部屋です。<br>
+					グリーンスライムの攻略はおおよそ地面のレンガ1ブロック分程の間合いを持って攻撃するのがベターです。<br>
+					スライムは移動や攻撃前にピクピク動作するので、これを目印に攻撃を行うと良いでしょう。</p>
+					<p>この部屋はクリアドアが右下、クリアキーが部屋の左上部にあるので、まずは鍵を取るために右側からジグザグに登って行きましょう。</p>
+				</div>
+			</div>
+			<div class="tip">
+				<img class="shot" src="../images/shot_early_03_02.png" width="256" height="240" alt="">
+				<div>
+					<p class="tip-title">No.07 <span style="color: #00e700">【Stage 03／Green slyme.】</span></p>
+					<p>左上部の鍵を取るとレッドスライムが出現します。<br>
+					レッドスライムはStage 02のウィザード同様火の玉を出します。<br>
+					ウィザードとの違いはプレイヤーの足元に火の玉を出してきます。このためクリアドアへの道はレッドスライムの火の玉をしゃがみながら受けていくことになります。</p>
+					<p>レッドスライムは3匹出現し、火の玉を出すタイミングは各自決まったタイミングを持っています。「だるまさんが転んだ」の様にレッドスライムに近づいて仕留めましょう。</p>
+					<p>最下段に出現するレッドスライムはタイミングがとてもタイトなので、倒さずに逃げるようにクリアドアに進むことが可能ですが、邪魔なので退治してしまう方が良い事があるかもしれません。</p>
+				</div>
+			</div>
+			<div class="tip">
+				<img class="shot" src="../images/shot_early_04_01.png" width="256" height="240" alt="">
+				<div>
+					<p class="tip-title">No.08 <span style="color: #4346c1">【Stage 04／Zombie.】</span></p>
+					<p>最初の難関です。部屋の中央に入るとゾンビが2体攻撃を行ってきます。<br>
+					ゾンビはゆっくりとプレイヤーに近づきながら放物線に肉片を投げてきます。
+					この肉片はプレイヤーの頭部になかなかのコントロールで投げてくるので、盾で受けながら(もしくは移動やジャンプ等で)回避してください。<br>
+					放物線はプレイヤーから離れれば離れるほど真上に落ちてくることになるので、この辺りのアルゴリズムを理解すると盾で受けるべきか、移動して避けるべきか判断できると思います。<br>
+					ゾンビはウィザードやスライムに比べて耐久力があるので、肉片投球の様子を伺いつつ連続攻撃をして倒してください。</p>
+					<p>この部屋にはポーションがあるので、もしも前のステージからダメージを多く受けていた場合はステージ開始直後にすぐに取りに行き、ライフの回復をしておくと良いでしょう。</p>
+				</div>
+			</div>
+			<div class="tip">
+				<img class="shot" src="../images/shot_early_05_01.png" width="256" height="240" alt="">
+				<div>
+					<p class="tip-title">No.09 <span style="color: #ff0000">【Stage 05／First indicate.】</span></p>
+					<p>ゲームを進めるにあたり、最初のキーポイントとなるステージです。<br>
+					このステージ開始時に見えている宝箱のアイテムはできる限り入手してください。<br>
+					この宝箱への道は停止しているゴンドラを始動させる必要があります。その方法は部屋に2箇所あるスイッチを切り替えなければなりません。<br>
+					スイッチの切り替えはスイッチに対して剣で攻撃すると切り替えることができるので、部屋内部を探索して見つけ出してください。<br>
+					また宝箱への道以外のゴンドラ用スイッチは、切り替えの度にゴンドラの昇降／下降が切り替わります。</p>
+				</div>
+			</div>
+			<div class="tip">
+				<img class="shot" src="../images/shot_early_05_02.png" width="256" height="240" alt="">
+				<div>
+					<p class="tip-title">No.10 <span style="color: #ff0000">【Stage 05／First indicate.】</span></p>
+					<p>宝箱のある場所に到着すると部屋が炎で妨害している状況になっています。<br>
+					ここで炎を剣で攻撃すると、あるメッセージが...</p>
+					<p>このアイテムを入手するとメッセージが出るので支持に従ってみてください。<br>
+					英語の意味が不可解の場合は、<a href="#playing_powerup">ここ</a>を参照してください。</p>
+				</div>
+			</div>
+			<div class="tip">
+				<img class="shot" src="../images/shot_early_06_01.png" width="256" height="240" alt="">
+				<div>
+					<p class="tip-title">No.11 <span style="color: #0000ff">【Stage 06／Advanced wizard.】</span></p>
+					<p>Stage 04のゾンビステージに続いて第2の難関です。<br>
+					このステージはStage 02のウィザードの強化版が登場します。このウィザードは高速な雷を杖から発射します。しかもプレイヤーの状況に合わせて上部／下部を打ち分けます。そして更に耐久力、移動速度も高いステータスを持つので、このステージに手こずる人も多いかもしれません。しかし、このステージ難易度が問題ないようであれば先のステージも目指しやすいと思いますので是非チャレンジしてみてください。</p>
+					<p>もしもStage 05のアイテムを入手している場合は、このステージ以降、ステージ開始時にこのアイテムを使用すると良いでしょう。</p>
+				</div>
+			</div>
+			<p>ここまでが序盤ステージの紹介となります。<br>
+			このステージ以降、様々なアクションや敵、アイテム、見せ場等がありますので、多くの人がプレーをしていただけると嬉しく思います。</p>
 <!-- 配布用では外す -->
-<div align="right"><a href="#top">&lt;TOP&gt;</a></div>
+			<p class="to-top"><a href="#top">&lt;TOP&gt;</a></p>
 <!-- /配布用では外す -->
-</p>
 
 <!-- 配布用では外す -->
-<img src="../images/separator_line.png" border="0" alt="">
-<a name="bgm">
-<br>
-<h2><img class="vmid" src="../images/symbol_player.png" border="0" alt="">
-BGM
-<img class="vmid" src="../images/symbol_player_r.png" border="0" alt=""></h2>
-</a>
+			<h2 class="chapter-title" id="bgm"><img src="../images/symbol_player.png" width="50" height="27" alt=""> ６．BGM <img src="../images/symbol_player_r.png" width="50" height="27" alt=""></h2>
 <!-- 旧バージョン -->
-<p>
-<font color="#FF0000"><strong>[旧バージョン説明]</strong></font><br>
-　Sample Action GameはBGMを外部ファイルに設定して鳴らすことができます。<br>
-(※正確には現時点でBGMが用意できないため後から設定できるように作成しました)<br>
-BGMは「BGMファイル」をプログラムファイル(ActionGame.jar)と同一のディレクトリに設置し、このBGMファイルに各シーン毎のBGMファイルを指定することによりゲーム中に音声が鳴ります。<br>
-<br>
-<center><img src="../images/bgm_file.png" border="0" alt=""></center><br>
-　BGMファイルはActionGame.jarと一緒に提供され、提供時は「bgm.properties.skel」という名前となっています。<br>
-設定時には「bgm.properties」とファイル名を変更して、ActionGame.jarと同じディレクトリに置いておきます。<br>
-BGMファイルはテキストエディタで編集可能なテキストファイルとなっており、Javaのプロパティファイル方式のレコード情報が記述されます。<br>
-BGMファイルの内部レコードフォーマットは、提供されBGMファイル内の説明文(ファイル内にコメント文にて記述)を参照にしてください。<br>
-</p>
+			<p class="ver-title ver-old">[旧バージョン説明]</p>
+			<p>Sample Action GameはBGMを外部ファイルに設定して鳴らすことができます。<br>
+			(※正確には現時点でBGMが用意できないため後から設定できるように作成しました)<br>
+			BGMは「BGMファイル」をプログラムファイル(ActionGame.jar)と同一のディレクトリに設置し、このBGMファイルに各シーン毎のBGMファイルを指定することによりゲーム中に音声が鳴ります。</p>
+			<div class="figures">
+				<img src="../images/bgm_file.png" width="537" height="366" alt="BGMファイル">
+			</div>
+			<p>BGMファイルはActionGame.jarと一緒に提供され、提供時は「bgm.properties.skel」という名前となっています。<br>
+			設定時には「bgm.properties」とファイル名を変更して、ActionGame.jarと同じディレクトリに置いておきます。<br>
+			BGMファイルはテキストエディタで編集可能なテキストファイルとなっており、Javaのプロパティファイル方式のレコード情報が記述されます。<br>
+			BGMファイルの内部レコードフォーマットは、提供されBGMファイル内の説明文(ファイル内にコメント文にて記述)を参照にしてください。</p>
 <!-- /旧バージョン -->
-<p>
-<!-- 新旧の書き分け --><font color="#00FFFF"><strong>[新バージョン説明]</strong></font><br><!-- /新旧の書き分け -->
-　<!-- 新旧の書き分け -->新バージョン(Rust版)は<!-- /新旧の書き分け -->BGMが鳴ります。BGMはプログラムと一緒に提供されるため、BGMファイルの設定は必要ありません。<br>
-<!-- 新旧の書き分け -->外部BGM(BGMファイル)の機能はなく、BGMファイル(bgm.properties)を置いても読み込みません。<br><!-- /新旧の書き分け -->
-BGMのON/OFFは、プレー中にF4キーにて切り替えが可能です。<br>
-</p>
+<!-- 新旧の書き分け -->
+			<p class="ver-title ver-new">[新バージョン説明]</p>
+<!-- /新旧の書き分け -->
+			<p><!-- 新旧の書き分け -->新バージョン(Rust版)は<!-- /新旧の書き分け -->BGMが鳴ります。BGMはプログラムと一緒に提供されるため、BGMファイルの設定は必要ありません。<br>
+<!-- 新旧の書き分け -->
+			外部BGM(BGMファイル)の機能はなく、BGMファイル(bgm.properties)を置いても読み込みません。<br>
+<!-- /新旧の書き分け -->
+			BGMのON/OFFは、プレー中にF4キーにて切り替えが可能です。</p>
 <!-- /配布用では外す -->
-<br>
-<br>
-<br>
-<br>
-<a href="#top">&lt;TOP&gt;</a><br>
-<img src="../images/separator_line.png" border="0" alt="" height="1"><br>
-<div align="right"><img src="../images/right.png" border="0" alt=""></div>
-	</table>
 
-	</table>
+			<footer class="site-footer">
+				<a href="#top">&lt;TOP&gt;</a>
+				<img src="../images/right.png" width="246" height="11" alt="NAVI OKI ALL RIGHTS RESERVED">
+			</footer>
+		</main>
+	</div>
 </body>
 </html>

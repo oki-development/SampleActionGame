@@ -1,0 +1,805 @@
+@charset "utf-8";
+/* 公開サイトの共通のデザイン (2026-11 の刷新。黒地・シアンの文字・ドット絵の画像の雰囲気は昔のまま) */
+
+:root {
+	--bg: #000000;
+	--panel: #07071a;
+	--line: #2a2a66;
+	--text: #ffffff;
+	--text-sub: #c8c8d8;
+	--cyan: #00ffff;
+	--sky: #00aaff;
+	--red: #ff3333;
+	--blue: #7777ff;
+
+	/* トップページ以外のページの、上の余白 (トップページはロゴがあるので使わない) */
+	--page-top: 98px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	background: var(--bg);
+	color: var(--text);
+	font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans JP", "Noto Sans CJK JP", Meiryo, sans-serif;
+	font-size: 16px;
+	line-height: 1.8;
+	-webkit-text-size-adjust: 100%;
+	/* 日本語を文節の切れ目で折り返す (「ステー/ジ」のような単語の途中での折り返しを避ける)。
+	   Chrome・Edge (119 以降) だけが対応。ほかのブラウザでは普段の折り返しになる */
+	word-break: auto-phrase;
+	/* 長い URL などは、はみ出すくらいなら途中で折り返す */
+	overflow-wrap: anywhere;
+}
+
+/* ドット絵の画像は拡大・縮小してもぼかさない */
+img {
+	image-rendering: pixelated;
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+
+/* リンク用の色処理 */
+a:link {
+	color: var(--cyan);
+}
+
+a:visited {
+	color: var(--sky);
+}
+
+a:hover,
+a:active {
+	color: #ff0000;
+}
+
+a:focus-visible {
+	outline: 2px solid var(--cyan);
+	outline-offset: 2px;
+}
+
+/* ---- 見出し (タイトルのロゴ) ---- */
+.site-header {
+	text-align: center;
+	padding: 16px 16px 8px;
+}
+
+.site-header img {
+	display: block;
+	margin: 0 auto;
+}
+
+/* ---- 全体の 2 段組み (左にメニュー、右に本文) ---- */
+.layout {
+	display: grid;
+	grid-template-columns: 136px minmax(0, 1fr);
+	gap: 32px;
+	max-width: 1080px;
+	/* 本文が短いページでも、メニューが画面の縦の中央まで下りられるように、画面の高さ以上にする */
+	min-height: 100vh;
+	margin: 0 auto;
+	padding: 16px 16px 48px;
+}
+
+/* トップページ以外 (ロゴの無いページ) は上を空ける */
+.layout:first-child {
+	padding-top: var(--page-top);
+}
+
+/* メニューの無いページ (配布用の説明書) は 1 段組み */
+.layout.no-nav {
+	grid-template-columns: minmax(0, 1fr);
+	max-width: 912px;
+}
+
+/* ---- メニュー (ドット絵のボタン) ---- */
+.site-nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	/* 画面の縦の中央に置く (ボタン 7 個 = 43px x 7 + 間 4px x 6 = 325px)。
+	   ページの頭ではロゴより上には行かず、スクロールしても中央に留まる */
+	position: sticky;
+	top: max(16px, calc(50vh - 163px));
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+.site-nav a,
+.site-nav span {
+	display: block;
+	width: 128px;
+	line-height: 0;
+}
+
+.site-nav img {
+	display: block;
+	width: 128px;
+	height: 43px;
+}
+
+/* ボタンの画像は 1: 普段、2: マウスが乗ったとき、3: 押したとき、0: 今のページ */
+.site-nav .hover,
+.site-nav .press {
+	display: none;
+}
+
+.site-nav a:hover .normal,
+.site-nav a:focus-visible .normal {
+	display: none;
+}
+
+.site-nav a:hover .hover,
+.site-nav a:focus-visible .hover {
+	display: block;
+}
+
+.site-nav a:active .hover {
+	display: none;
+}
+
+.site-nav a:active .press {
+	display: block;
+}
+
+/* ---- 本文 ---- */
+main {
+	max-width: 880px;
+}
+
+/* 段落は行頭を 1 字下げ、段落の間は少しだけ空ける (全角スペースや <br> で組まなくてよいように) */
+main p {
+	margin: 0 0 0.5em;
+	text-indent: 1em;
+}
+
+/* 「!」の囲みの中は、アイコンの右から書き始めるので字下げしない */
+main p.no-indent,
+main .note p {
+	text-indent: 0;
+}
+
+/* 節の見出し (画像の見出しの下に線を引く) */
+.section-title {
+	margin: 56px 0 20px;
+	padding-bottom: 8px;
+	border-bottom: 1px solid var(--line);
+	line-height: 1;
+}
+
+.section-title:first-child {
+	margin-top: 0;
+}
+
+/* スクリーンショットの並び */
+.shots {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 258px));
+	justify-content: center;
+	gap: 16px 24px;
+	margin: 8px 0 48px;
+}
+
+.shots img {
+	display: block;
+	width: 100%;
+	border: 1px solid #555;
+}
+
+/* 新旧のバージョンの印 */
+.ver-old {
+	color: var(--red);
+	font-weight: bold;
+}
+
+.ver-new {
+	color: var(--cyan);
+	font-weight: bold;
+}
+
+/* 注意の赤い文字 */
+.warn {
+	color: var(--red);
+}
+
+/* 製作者の名前 */
+.author {
+	color: var(--blue);
+}
+
+/* 箇条書き (先頭にアイコンを置く) */
+.list {
+	list-style: none;
+	margin: 0.5em 0 0.75em;
+	padding: 0 0 0 1em;
+}
+
+.list li {
+	margin: 4px 0;
+}
+
+.list-good li {
+	padding-left: 32px;
+	background: url("../images/info_button_red_good.png") no-repeat 0 0.15em;
+	image-rendering: pixelated;
+}
+
+.list-dot li {
+	padding-left: 1em;
+	text-indent: -1em;
+}
+
+.list-dot li::before {
+	content: "・";
+}
+
+/* 枠の囲み */
+.box {
+	margin: 0 0 20px;
+	padding: 16px 20px;
+	background: var(--panel);
+	border: 1px solid var(--line);
+}
+
+.box > :last-child {
+	margin-bottom: 0;
+}
+
+/* 枠の囲みで、先頭に「!」のアイコンを付けるもの */
+.note {
+	position: relative;
+	margin: 0 0 20px;
+	padding: 16px 20px 16px 56px;
+	background: var(--panel);
+	border: 1px solid var(--line);
+}
+
+.note::before {
+	content: "";
+	position: absolute;
+	left: 18px;
+	top: 18px;
+	width: 24px;
+	height: 24px;
+	background: url("../images/info_button_blue_exclamation.png") no-repeat;
+}
+
+.note > :last-child {
+	margin-bottom: 0;
+}
+
+.note-title {
+	font-weight: bold;
+}
+
+/* 難易度の目安の表 */
+.games {
+	border-collapse: collapse;
+	margin: 0 0 1em 1em;
+}
+
+.games td {
+	padding: 2px 16px 2px 0;
+	vertical-align: top;
+}
+
+.games td:last-child {
+	color: var(--text-sub);
+}
+
+/* ページの見出し (画像) */
+.page-title {
+	margin: 0 0 20px;
+	padding-bottom: 8px;
+	border-bottom: 1px solid var(--line);
+	line-height: 1;
+}
+
+/* 文字の小見出し (黄色) */
+.sub-title {
+	margin: 40px 0 16px;
+	font-size: 1.15em;
+	color: #ffff00;
+}
+
+/* 囲みの中の黄色の見出し */
+.sub-heading {
+	font-size: 1.1em;
+	font-weight: bold;
+	color: #ffff00;
+}
+
+/* 目次 */
+.toc {
+	margin: 0 0 32px;
+	padding: 12px 20px;
+	background: var(--panel);
+	border: 1px solid var(--line);
+}
+
+.toc ol,
+.toc ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.toc li {
+	margin: 2px 0;
+}
+
+.toc li li {
+	padding-left: 1.5em;
+}
+
+.toc > ol > li + li {
+	margin-top: 10px;
+}
+
+/* 日付と内容の表 (更新履歴など) */
+.history {
+	width: 100%;
+	border-collapse: collapse;
+	margin: 0 0 1em;
+}
+
+.history th,
+.history td {
+	padding: 8px 12px;
+	border: 1px solid var(--line);
+	text-align: left;
+	vertical-align: top;
+}
+
+.history th {
+	width: 7.5em;
+	font-weight: normal;
+	white-space: nowrap;
+	color: var(--sky);
+	background: var(--panel);
+}
+
+/* ダウンロードの欄 */
+.release {
+	display: grid;
+	grid-template-columns: 200px minmax(0, 1fr);
+	margin: 0 0 -1px;
+	border: 1px solid var(--line);
+}
+
+.release + :not(.release) {
+	margin-top: calc(1em + 1px);
+}
+
+.release-get {
+	padding: 12px;
+	text-align: center;
+	background: var(--panel);
+	border-right: 1px solid var(--line);
+}
+
+.release-name {
+	display: block;
+	font-weight: bold;
+	color: var(--sky);
+}
+
+.release-old .release-name {
+	font-weight: normal;
+	color: #808080;
+}
+
+.release-get a + .release-name {
+	margin-top: 8px;
+}
+
+.release-notes {
+	padding: 12px 16px;
+}
+
+.release-notes .list {
+	margin: 0;
+	padding: 0;
+}
+
+/* ダウンロードのボタン (1: 普段、2: 押したとき) */
+.dl-btn {
+	display: inline-block;
+	line-height: 0;
+}
+
+.dl-btn img {
+	width: 64px;
+	height: 39px;
+}
+
+.dl-btn .press {
+	display: none;
+}
+
+.dl-btn:active .normal {
+	display: none;
+}
+
+.dl-btn:active .press {
+	display: inline;
+}
+
+/* よくある質問 (先頭に「?」と答えのアイコン) */
+.qa {
+	margin: 0 0 20px;
+	padding: 16px 20px;
+	background: var(--panel);
+	border: 1px solid var(--line);
+	scroll-margin-top: 16px;
+}
+
+.qa-q,
+.qa-a {
+	position: relative;
+	padding-left: 36px;
+}
+
+.qa-q {
+	margin: 0 0 12px;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+.qa-q::before,
+.qa-a::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0.2em;
+	width: 24px;
+	height: 24px;
+}
+
+.qa-q::before {
+	background: url("../images/info_button_orange_question.png") no-repeat;
+}
+
+.qa-a::before {
+	background: url("../images/info_button_sky_blue_answer.png") no-repeat;
+}
+
+.qa-a p {
+	text-indent: 0;
+}
+
+.qa-a > :last-child {
+	margin-bottom: 0;
+}
+
+/* 横に並べる画像 */
+.figures {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 16px 24px;
+	margin: 12px 0 20px;
+}
+
+.figures img.shot {
+	border: 1px solid #555;
+}
+
+/* 項目と値の並び (連絡先など) */
+.fields {
+	display: grid;
+	grid-template-columns: max-content minmax(0, 1fr);
+	gap: 8px 12px;
+	align-items: center;
+	margin: 16px 0 16px 1em;
+}
+
+.fields dt,
+.fields dd {
+	margin: 0;
+}
+
+/* リンク集 */
+.link-card {
+	display: flex;
+	align-items: center;
+	gap: 16px 20px;
+	flex-wrap: wrap;
+	margin: 0 0 16px;
+	padding: 16px 20px;
+	background: var(--panel);
+	border: 1px solid var(--line);
+}
+
+.link-card p {
+	margin: 0;
+	text-indent: 0;
+}
+
+/* 章の見出し (遊び方のページ。騎士の絵ではさむ) */
+.chapter-title {
+	margin: 64px 0 20px;
+	padding: 6px 0 10px;
+	border-top: 1px solid var(--line);
+	border-bottom: 1px solid var(--line);
+	font-size: 1.25em;
+	color: var(--cyan);
+	text-align: left;
+	scroll-margin-top: 16px;
+}
+
+.sub-title,
+.toc a {
+	scroll-margin-top: 16px;
+}
+
+/* [新バージョン説明] などの見出しの行 */
+main p.ver-title {
+	margin-top: 1em;
+	text-indent: 0;
+}
+
+/* コマンドの入力例 */
+.command {
+	margin: 12px 0 16px;
+	padding: 12px 16px;
+	background: var(--panel);
+	border: 1px solid #555;
+	font-family: "MS Gothic", "ＭＳ ゴシック", "Osaka-Mono", "Noto Sans Mono CJK JP", monospace;
+	font-size: 14px;
+	line-height: 1.6;
+	overflow-wrap: anywhere;
+	word-break: normal;
+}
+
+.command p {
+	margin: 0 0 1em;
+	text-indent: 0;
+}
+
+.command p:last-child {
+	margin-bottom: 0;
+}
+
+/* 説明の表 */
+.table-wrap {
+	margin: 12px 0 16px;
+	overflow-x: auto;
+}
+
+.data {
+	width: 100%;
+	border-collapse: collapse;
+	font-size: 14px;
+	line-height: 1.6;
+}
+
+/* 列の多い表は、狭い画面では横にスクロールさせる */
+.table-wrap .data.wide {
+	min-width: 560px;
+}
+
+.data th,
+.data td {
+	padding: 6px 10px;
+	border: 1px solid #444466;
+	vertical-align: top;
+	text-align: left;
+}
+
+.data th {
+	background: var(--panel);
+	color: var(--sky);
+	text-align: center;
+	font-weight: bold;
+	white-space: nowrap;
+}
+
+.data td.c,
+.items td.c {
+	text-align: center;
+	vertical-align: middle;
+}
+
+/* ページの中の <TOP> へのリンク */
+main p.to-top {
+	margin: 8px 0 0;
+	text-align: right;
+	text-indent: 0;
+}
+
+/* 画面の写真と、番号ごとの説明の表 */
+.screen-figure {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	gap: 16px;
+	margin: 12px 0 16px;
+}
+
+.screen-figure > img {
+	flex: none;
+}
+
+.screen-figure .data {
+	flex: 1 1 360px;
+	width: auto;
+}
+
+.screen-figure .data th,
+.screen-figure .data td.c {
+	white-space: nowrap;
+}
+
+/* 例の写真と説明 */
+.example {
+	margin: 16px 0;
+	padding: 12px;
+	background: var(--panel);
+	border: 1px solid var(--line);
+	text-align: center;
+}
+
+.example figcaption {
+	margin-top: 8px;
+	text-align: left;
+	font-size: 14px;
+}
+
+/* アイテムの一覧 */
+.items {
+	border-collapse: collapse;
+	margin: 12px 0 16px 1em;
+	font-size: 14px;
+}
+
+.items td {
+	padding: 4px 10px;
+	vertical-align: middle;
+}
+
+.items td:nth-child(3) {
+	white-space: nowrap;
+	color: var(--sky);
+}
+
+/* 序盤ステージのアドバイス (写真と説明) */
+.tip {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	gap: 12px 20px;
+	margin: 0 0 16px;
+	padding: 12px;
+	background: var(--panel);
+	border: 1px solid var(--line);
+}
+
+.tip > img {
+	flex: none;
+}
+
+.tip > div {
+	flex: 1 1 300px;
+	font-size: 15px;
+}
+
+.tip p {
+	text-indent: 0;
+}
+
+.tip p:last-child {
+	margin-bottom: 0;
+}
+
+main p.tip-title {
+	font-weight: bold;
+}
+
+/* ---- ページの終わり ---- */
+.site-footer {
+	margin-top: 64px;
+	padding-top: 12px;
+	border-top: 1px solid var(--line);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 16px;
+	flex-wrap: wrap;
+}
+
+/* ---- 狭い画面 (スマートフォン) ではメニューを上に横並びにする ---- */
+@media (max-width: 720px) {
+	body {
+		font-size: 15px;
+	}
+
+	.layout {
+		grid-template-columns: minmax(0, 1fr);
+		gap: 24px;
+		min-height: 0;
+	}
+
+	.site-nav ul {
+		position: static;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.list {
+		padding-left: 0;
+	}
+
+	.box {
+		padding: 14px;
+	}
+
+	.note {
+		padding: 14px 14px 14px 48px;
+	}
+
+	.note::before {
+		left: 14px;
+		top: 16px;
+	}
+
+	.games {
+		margin-left: 0;
+	}
+
+	.games td {
+		padding-right: 10px;
+	}
+
+	.release {
+		grid-template-columns: minmax(0, 1fr);
+	}
+
+	.release-get {
+		border-right: 0;
+		border-bottom: 1px solid var(--line);
+	}
+
+	.history th,
+	.history td {
+		display: block;
+		width: auto;
+		border-bottom: 0;
+	}
+
+	.history tr:last-child td {
+		border-bottom: 1px solid var(--line);
+	}
+
+	.qa {
+		padding: 14px;
+	}
+
+	.fields {
+		margin-left: 0;
+	}
+
+	.items {
+		margin-left: 0;
+	}
+
+	.tip > img,
+	.screen-figure > img {
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 480px) {
+	.shots {
+		grid-template-columns: minmax(0, 258px);
+	}
+}

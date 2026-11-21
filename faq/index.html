@@ -1,160 +1,98 @@
+<!DOCTYPE html>
 <html lang="ja">
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>80's Retro Game Respect - FAQ</title>
-	<link rel="shortcut icon" href="../images/favicon.ico">
-	<link rel="stylesheet" href="../css/default.css" type="text/css">
+	<link rel="icon" href="../images/favicon.ico">
+	<link rel="stylesheet" href="../css/site.css">
 </head>
-<body bgcolor="#000000" text="#FFFFFF" link="#000000" vlink="#000000" alink="#000000">
-	<table>
-	<td align=center valign="top">
-		<a name="top"><br></a>
-		<br>
-		<br>
-		<span
-			onmouseout="document.id_001.src='../images/button_home_1.png';"
-			onmouseover="document.id_001.src='../images/button_home_2.png';"
-			onmousedown="document.id_001.src='../images/button_home_3.png';"
-			onmouseup="document.id_001.src='../images/button_home_2.png';"
-		>
-			<a href="../index.html" hidefocus=true style="color:black"><img name="id_001" alt="home" src="../images/button_home_1.png"></a><br>
-		</span>
+<body id="top">
+	<div class="layout">
+		<nav class="site-nav" aria-label="メニュー">
+			<ul>
+				<li><a href="../index.html"><img class="normal" src="../images/button_home_1.png" alt="Home"><img class="hover" src="../images/button_home_2.png" alt=""><img class="press" src="../images/button_home_3.png" alt=""></a></li>
+				<li><a href="../information/index.html"><img class="normal" src="../images/button_information_1.png" alt="Information"><img class="hover" src="../images/button_information_2.png" alt=""><img class="press" src="../images/button_information_3.png" alt=""></a></li>
+				<li><a href="../playing_manual/index.html"><img class="normal" src="../images/button_playing_manual_1.png" alt="Playing manual"><img class="hover" src="../images/button_playing_manual_2.png" alt=""><img class="press" src="../images/button_playing_manual_3.png" alt=""></a></li>
+				<li><a href="../download/index.html"><img class="normal" src="../images/button_download_1.png" alt="Download"><img class="hover" src="../images/button_download_2.png" alt=""><img class="press" src="../images/button_download_3.png" alt=""></a></li>
+				<li><span aria-current="page"><img src="../images/button_faq_0.png" alt="FAQ"></span></li>
+				<li><a href="../contact/index.html"><img class="normal" src="../images/button_contact_1.png" alt="Contact"><img class="hover" src="../images/button_contact_2.png" alt=""><img class="press" src="../images/button_contact_3.png" alt=""></a></li>
+				<li><a href="../link/index.html"><img class="normal" src="../images/button_link_1.png" alt="Link"><img class="hover" src="../images/button_link_2.png" alt=""><img class="press" src="../images/button_link_3.png" alt=""></a></li>
+			</ul>
+		</nav>
 
-		<span
-			onmouseout="document.id_002.src='../images/button_information_1.png';"
-			onmouseover="document.id_002.src='../images/button_information_2.png';"
-			onmousedown="document.id_002.src='../images/button_information_3.png';"
-			onmouseup="document.id_002.src='../images/button_information_2.png';"
-		>
-			<a href="../information/index.html" hidefocus=true style="color:black"><img name="id_002" alt="information" src="../images/button_information_1.png"></a><br>
-		</span>
+		<main>
+			<h1 class="page-title"><img src="../images/symbol_faq.png" width="192" height="64" alt="よくある質問 FAQ"></h1>
+			<p>ここではSample Action Gameについて、よくある質問をお知らせします。</p>
 
-		<span
-			onmouseout="document.id_003.src='../images/button_playing_manual_1.png';"
-			onmouseover="document.id_003.src='../images/button_playing_manual_2.png';"
-			onmousedown="document.id_003.src='../images/button_playing_manual_3.png';"
-			onmouseup="document.id_003.src='../images/button_playing_manual_2.png';"
-		>
-			<a href="../playing_manual/index.html" hidefocus=true style="color:black"><img name="id_003" alt="playing manual" src="../images/button_playing_manual_1.png"></a><br>
-		</span>
+			<nav class="toc" aria-label="目次">
+				<ol>
+					<li><a href="#program">１．プログラムに関すること</a>
+						<ol>
+							<li><a href="#boot">１．起動すると、とてもスローモーションとなってしまいます。</a></li>
+							<li><a href="#applet">２．ブラウザで起動したいのですが、アプレットとして実行できないのでしょうか？</a></li>
+						</ol>
+					</li>
+					<li><a href="#game">２．ゲーム内容に関すること</a>
+						<ol>
+							<li><a href="#controller">１．キーボードで操作するのが難しすぎます。</a></li>
+							<li><a href="#switch">２．Stage 08のスイッチのある部屋のクリア方法が分かりません。</a></li>
+						</ol>
+					</li>
+				</ol>
+			</nav>
 
-		<span
-			onmouseout="document.id_004.src='../images/button_download_1.png';"
-			onmouseover="document.id_004.src='../images/button_download_2.png';"
-			onmousedown="document.id_004.src='../images/button_download_3.png';"
-			onmouseup="document.id_004.src='../images/button_download_2.png';"
-		>
-			<a href="../download/index.html" hidefocus=true style="color:black"><img name="id_004" alt="download" src="../images/button_download_1.png"></a><br>
-		</span>
+			<h2 class="sub-title" id="program">１．プログラムに関すること</h2>
 
-		<img name="id_005" border=0 alt="faq" src="../images/button_faq_0.png"><br>
+			<section class="qa" id="boot">
+				<h3 class="qa-q">１．起動すると、とてもスローモーションとなってしまいます。</h3>
+				<div class="qa-a">
+					<p>実行環境が非力の可能性があります。本ゲームは描画処理に依存する箇所が多いので、グラフィック表示に特化していないOS(Linux等)やビデオカードが2000年前後程度のものだと、動作的に限界がある場合があります。<br>
+					もしもプレー中にF3キーを押して、背景を限界まで表示しない状態でも改善されない場合は、残念ながらプレーを諦めてください。</p>
+				</div>
+			</section>
 
-		<span
-			onmouseout="document.id_006.src='../images/button_contact_1.png';"
-			onmouseover="document.id_006.src='../images/button_contact_2.png';"
-			onmousedown="document.id_006.src='../images/button_contact_3.png';"
-			onmouseup="document.id_006.src='../images/button_contact_2.png';"
-		>
-			<a href="../contact/index.html" hidefocus=true style="color:black"><img name="id_006" alt="contact" src="../images/button_contact_1.png"></a><br>
-		</span>
+			<section class="qa" id="applet">
+				<h3 class="qa-q">２．ブラウザで起動したいのですが、アプレットとして実行できないのでしょうか？</h3>
+				<div class="qa-a">
+					<p>申し訳ございません。2006/12現在、製作者のスキル不足でアプレット化が行えない状況です。<br>
+					元々設計としてファイル操作があったので、このように設計していなかったことや、アプリケーションとアプレットを同時に実現する設計をしていなかったのが失敗の原因です。</p>
+				</div>
+			</section>
 
-		<span
-			onmouseout="document.id_007.src='../images/button_link_1.png';"
-			onmouseover="document.id_007.src='../images/button_link_2.png';"
-			onmousedown="document.id_007.src='../images/button_link_3.png';"
-			onmouseup="document.id_007.src='../images/button_link_2.png';"
-		>
-			<a href="../link/index.html" hidefocus=true style="color:black"><img name="id_007" alt="link" src="../images/button_link_1.png"></a><br>
-		</span>
+			<h2 class="sub-title" id="game">２．ゲーム内容に関すること</h2>
 
-	</td>
-	<td width=20>
-	</td>
+			<section class="qa" id="controller">
+				<h3 class="qa-q">１．キーボードで操作するのが難しすぎます。<br>できればジョイスティックなどでプレーしたいのですが...</h3>
+				<div class="qa-a">
+					<p>本ゲームはキーボードのみ対応しています。<br>
+					しかしながら、キーボード入力をジョイスティックで操作するためのソフトウェアを開発している方がいらっしゃるようです。googleなどで「Joy To Key」などで検索を行うとソフトが見つかるかもしれません。</p>
+				</div>
+			</section>
 
-	<td valign="top">
-	<table>
-<h1><img class="vmid" src="../images/symbol_faq.png" border="0" alt=""></h1>
-<p>
-　ここではSample Action Gameについて、よくある質問をお知らせします。<br>
-<br>
-<p class="contents">
-　<a href="#program">１．プログラムに関すること</a><br>
-　　　<a href="#boot">１．起動すると、とてもスローモーションとなってしまいます。</a><br>
-　　　<a href="#applet">２．ブラウザで起動したいのですが、アプレットとして実行できないのでしょうか？</a><br>
-<br>
-　<a href="#game">２．ゲーム内容に関すること</a><br>
-　　　<a href="#controller">１．キーボードで操作するのが難しすぎます。</a><br>
-　　　<a href="#switch">２．Stage 08のスイッチのある部屋のクリア方法が分かりません。</a><br>
-</p>
-<br>
-<img src="../images/separator_line.png" border="0" alt="">
-<a name="program">
-<br>
-<font size="+1" color="#FFFF00"><b>１．プログラムに関すること</b></font><br>
-</a>
-<a name="boot">
-<br>
-<img src="../images/info_button_orange_question.png" border="0" alt="">
-<b>１．起動すると、とてもスローモーションとなってしまいます。</b><br>
-</a>
-<br>
-<img src="../images/info_button_sky_blue_answer.png" border="0" alt="">
-実行環境が非力の可能性があります。本ゲームは描画処理に依存する箇所が多いので、グラフィック表示に特化していないOS(Linux等)やビデオカードが2000年前後程度のものだと、動作的に限界がある場合があります。<br>
-もしもプレー中にF3キーを押して、背景を限界まで表示しない状態でも改善されない場合は、残念ながらプレーを諦めてください。<br>
-<br>
-<img src="../images/separator_line2.png" border="0" alt="">
-<a name="applet">
-<br>
-<img src="../images/info_button_orange_question.png" border="0" alt="">
-<b>２．ブラウザで起動したいのですが、アプレットとして実行できないのでしょうか？</b><br>
-</a>
-<br>
-<img src="../images/info_button_sky_blue_answer.png" border="0" alt="">
-申し訳ございません。2006/12現在、製作者のスキル不足でアプレット化が行えない状況です。<br>
-元々設計としてファイル操作があったので、このように設計していなかったことや、アプリケーションとアプレットを同時に実現する設計をしていなかったのが失敗の原因です。<br>
-<br>
-<img src="../images/separator_line2.png" border="0" alt="">
-<a name="game">
-<br>
-<font size="+1" color="#FFFF00"><b>２．ゲーム内容に関すること</b></font><br>
-</a>
-<a name="controller">
-<br>
-<img src="../images/info_button_orange_question.png" border="0" alt="">
-<b>１．キーボードで操作するのが難しすぎます。</b><br>できればジョイスティックなどでプレーしたいのですが...<br>
-</a>
-<br>
-<img src="../images/info_button_sky_blue_answer.png" border="0" alt="">
-本ゲームはキーボードのみ対応しています。<br>しかしながら、キーボード入力をジョイスティックで操作するためのソフトウェアを開発している方がいらっしゃるようです。googleなどで「Joy To Key」などで検索を行うとソフトが見つかるかもしれません。<br>
-<br>
-<img src="../images/separator_line2.png" border="0" alt="">
-<a name="switch">
-<br>
-<img src="../images/info_button_orange_question.png" border="0" alt="">
-<b>２．Stage 08のスイッチのある部屋のクリア方法が分かりません。</b><br>
-</a>
-<br>
-<img src="../images/info_button_sky_blue_answer.png" border="0" alt="">
-Stage 08のスイッチは背景の壁画と関連しています。これはローマ数字となっていて、スイッチがコンピュータの2進数に対応しています。<br>
-この壁画数字の上にある○がスイッチONの方向を表しており、○が左にある場合は左側がONとなります。<br>
-以下に○が左にある場合の数字表を記載します。<br>
-　　　<img src="../images/faq_stage08.png" border="0" alt=""><br>
-　　例)<br>
-　　　○が左でVIIの場合 → ７ → 『／ ＼ ＼ ＼』<br>
-　　　○が右でXの場合 → 10 → 『／ ＼／ ＼』 (ONが右になるので上の表の逆になります)<br>
-<br>
-　もしもコンピュータの2進の意味が分からない場合は、15種類のスイッチの組み合わせを剣でガンガン合わせて切り抜けましょう！<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<a href="#top">&lt;TOP&gt;</a><br>
-<img src="../images/separator_line.png" border="0" alt="" height="1"><br>
-<div align="right"><img src="../images/right.png" border="0" alt=""></div>
-	</table>
+			<section class="qa" id="switch">
+				<h3 class="qa-q">２．Stage 08のスイッチのある部屋のクリア方法が分かりません。</h3>
+				<div class="qa-a">
+					<p>Stage 08のスイッチは背景の壁画と関連しています。これはローマ数字となっていて、スイッチがコンピュータの2進数に対応しています。<br>
+					この壁画数字の上にある○がスイッチONの方向を表しており、○が左にある場合は左側がONとなります。<br>
+					以下に○が左にある場合の数字表を記載します。</p>
+					<div class="figures">
+						<img src="../images/faq_stage08.png" width="440" height="286" alt="○が左にある場合の数字表">
+					</div>
+					<p>例)</p>
+					<ul class="list">
+						<li>○が左でVIIの場合 → ７ → 『／ ＼ ＼ ＼』</li>
+						<li>○が右でXの場合 → 10 → 『／ ＼／ ＼』 (ONが右になるので上の表の逆になります)</li>
+					</ul>
+					<p>もしもコンピュータの2進の意味が分からない場合は、15種類のスイッチの組み合わせを剣でガンガン合わせて切り抜けましょう！</p>
+				</div>
+			</section>
 
-	</table>
-
+			<footer class="site-footer">
+				<a href="#top">&lt;TOP&gt;</a>
+				<img src="../images/right.png" width="246" height="11" alt="NAVI OKI ALL RIGHTS RESERVED">
+			</footer>
+		</main>
+	</div>
 </body>
 </html>
