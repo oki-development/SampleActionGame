@@ -380,10 +380,15 @@ main .note p {
 	margin-top: calc(1em + 1px);
 }
 
+/* 宝箱の絵の背景は黒なので、欄の地も黒のままにする。絵と版の名前は欄の縦の中央に置く */
 .release-get {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	padding: 12px;
 	text-align: center;
-	background: var(--panel);
+	background: var(--bg);
 	border-right: 1px solid var(--line);
 }
 
@@ -402,7 +407,11 @@ main .note p {
 	margin-top: 8px;
 }
 
+/* 変更点の文も欄の縦の中央に置く */
 .release-notes {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	padding: 12px 16px;
 }
 
